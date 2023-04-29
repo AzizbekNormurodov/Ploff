@@ -34,7 +34,7 @@ class ThemeTextStyles {
   static const TextStyle features = TextStyle(
     fontSize: 15,
     fontWeight: FontWeight.w400,
-    color: ThemeColors.black3,
+    color: Color(0xff141414),
   );
   static const TextStyle order3 = TextStyle(
     fontSize: 15,

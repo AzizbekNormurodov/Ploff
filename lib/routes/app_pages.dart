@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ploff/pages/main/home/product_page.dart';
+import 'package:ploff/pages/main/product/product_page.dart';
 import 'package:ploff/pages/main/sign_up/details_page.dart';
 import 'package:ploff/pages/main/sign_up/pin_code_page.dart';
 import 'package:ploff/pages/splash/language_page.dart';

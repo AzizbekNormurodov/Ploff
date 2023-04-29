@@ -77,17 +77,17 @@ final lightTheme = ThemeData(
       contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(12)),
-        borderSide: BorderSide(
-          color: Colors.transparent,
-          width: 1,
-        ),
+        // borderSide: BorderSide(
+        //   color: Colors.transparent,
+        //   width: 1,
+        // ),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(12)),
-        borderSide: BorderSide(
-          color: Colors.transparent,
-          width: 1,
-        ),
+        // borderSide: BorderSide(
+        //   color: Colors.transparent,
+        //   width: 1,
+        // ),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(12)),
@@ -109,6 +109,6 @@ final lightTheme = ThemeData(
     ),
     textTheme: const TextTheme(
         bodyText1: TextStyle(
-      fontSize: 22,
-      fontWeight: FontWeight.w700,
+      fontSize: 15,
+      fontWeight: FontWeight.w400,
     )));

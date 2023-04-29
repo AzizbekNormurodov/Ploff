@@ -9,12 +9,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController( length: 3,
+    return DefaultTabController(
+      length: 3,
       child: Scaffold(
-        appBar: PreferredSize( preferredSize: const Size.fromHeight(100),
+        appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(100),
           child: AppBar(
             automaticallyImplyLeading: false,
-            title:  Row(
+            title: Row(
               children: const [
                 Icon(
                   Icons.location_on_outlined,
@@ -35,24 +37,21 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-                bottom: const PreferredSize(
-                  preferredSize: Size.fromHeight(150),
-                  child: Padding(
-                    padding: EdgeInsets.only(left: 16, right: 16),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        fillColor: Color(0xffF5F5F5),
-                        hintStyle: TextStyle(color: Color(0xff9AA6AC)),
-                        hintText: 'Поиск по всей еде',
-                        border: InputBorder.none,
-                        prefixIcon: Icon(Icons.search),
-                      ),
-                    ),
+            bottom: const PreferredSize(
+              preferredSize: Size.fromHeight(150),
+              child: Padding(
+                padding: EdgeInsets.only(left: 16, right: 16),
+                child: TextField(
+                  decoration: InputDecoration(
+                    fillColor: Color(0xffF5F5F5),
+                    hintStyle: TextStyle(color: Color(0xff9AA6AC)),
+                    hintText: 'Поиск по всей еде',
+                    border: InputBorder.none,
+                    prefixIcon: Icon(Icons.search),
                   ),
-
                 ),
-
-
+              ),
+            ),
           ),
         ),
         body: CustomScrollView(
@@ -66,8 +65,7 @@ class HomePage extends StatelessWidget {
             const DiscountWidget(),
             const PopularWidget(),
             const RecommendationsWidget(),
-
-        ],
+          ],
         ),
       ),
     );
