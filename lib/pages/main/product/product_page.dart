@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
-import 'package:ploff/pages/main/product/widget/prodect_bottomsheet_widget.dart';
+import 'package:ploff/pages/main/product/widget/bottomsheet_widget.dart';
 import 'package:ploff/pages/main/product/widget/recommended_widget.dart';
 
-import 'widget/product_ additives_widget.dart';
+import 'widget/additives_widget.dart';
 import 'widget/product_widget.dart';
 
 class ProductPage extends StatefulWidget {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 
-import 'product_delivery_address_widget.dart';
+import 'delivery_address_widget.dart';
 
 class BottomSheetWidget extends StatefulWidget {
   const BottomSheetWidget({Key? key}) : super(key: key);

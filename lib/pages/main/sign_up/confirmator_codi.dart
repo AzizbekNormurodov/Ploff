@@ -186,7 +186,7 @@ class _ConfirmationCodePageState extends State<ConfirmationCodePage> {
                     color:  ThemeColors.primary,
                     child: InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, AppRoutes.details);
+                        Navigator.pushNamed(context, AppRoutes.profile);
                       },
                       child: const Center(
                         child: Padding(

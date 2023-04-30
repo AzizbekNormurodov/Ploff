@@ -9,5 +9,9 @@ class AppRoutes {
   static const String rivierarestaurant = '/rivierarestaurant';
   static const String language = '/language';
   static const String product = '/product';
+  static const String basket_empty = '/basket_empty';
+  static const String basket = '/basket';
+  static const String checkout = '/checkout';
+  static const String profile = '/profile';
 
 }
