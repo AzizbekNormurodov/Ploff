@@ -13,5 +13,7 @@ class AppRoutes {
   static const String basket = '/basket';
   static const String checkout = '/checkout';
   static const String profile = '/profile';
+  static const String active_order = '/active_order';
+  static const String history_order = '/history_order';
 
 }

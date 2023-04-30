@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ploff/pages/main/%D1%81heckout/checkout_page.dart';
 import 'package:ploff/pages/main/basket/basket_empty_page.dart';
 import 'package:ploff/pages/main/basket/basket_page.dart';
+import 'package:ploff/pages/main/my_orders/active_order_page.dart';
+import 'package:ploff/pages/main/my_orders/history_order_oage.dart';
 import 'package:ploff/pages/main/product/product_page.dart';
 import 'package:ploff/pages/main/profile/profile_page.dart';
 import 'package:ploff/pages/main/sign_up/details_page.dart';
@@ -28,6 +30,8 @@ class AppPages {
     AppRoutes.basket: (context) => BasketPage(),
     AppRoutes.checkout: (context) => CheckoutPage(),
     AppRoutes.profile: (context) => ProfilePage(),
+    AppRoutes.active_order: (context) => ActiveOrderPage(),
+    AppRoutes.history_order: (context) => HistoryOrderPage(),
 
 
   };

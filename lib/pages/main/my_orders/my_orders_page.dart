@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
-import 'package:ploff/pages/main/%D1%81heckout/widget/address_widget.dart';
-import 'package:ploff/pages/main/product/widget/nearest_branch_widget.dart';
-import 'package:ploff/routes/app_routes.dart';
-
-import '../product/widget/bottomsheet_widget.dart';
-import '../сheckout/widget/courier_widget.dart';
-import '../сheckout/widget/delivery_time_widget.dart';
-import '../сheckout/widget/payment_type_widget.dart';
+import 'package:ploff/pages/main/my_orders/widget/Active_order_widget.dart';
+import 'package:ploff/pages/main/my_orders/widget/history_order_widget.dart';
 
 class MyordersPage extends StatefulWidget {
   const MyordersPage({Key? key}) : super(key: key);
@@ -27,11 +21,13 @@ class _MyordersPageState extends State<MyordersPage>
   void initState() {
     tabController = TabController(length: 2, vsync: this);
     tabController.addListener(() {});
-}
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         centerTitle: true,
         title: const Padding(
           padding: EdgeInsets.only(left: 16),
@@ -53,8 +49,8 @@ class _MyordersPageState extends State<MyordersPage>
             child: Theme(
               data: Theme.of(context).copyWith(
                 colorScheme: Theme.of(context).colorScheme.copyWith(
-                  surfaceVariant: Colors.transparent,
-                ),
+                      surfaceVariant: Colors.transparent,
+                    ),
               ),
               child: TabBar(
                 labelColor: Colors.black,
@@ -67,7 +63,7 @@ class _MyordersPageState extends State<MyordersPage>
                     Radius.circular(8),
                   ),
                 ),
-                tabs:  [
+                tabs: const [
                   Tab(
                     child: Text("Активные заказы"),
                   ),
@@ -85,53 +81,12 @@ class _MyordersPageState extends State<MyordersPage>
         children: [
           ListView.builder(
               itemBuilder: (context, index) {
-                return Column(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 16),
-                      child: AddressWidget(),
-                    ),
-                    const CourierWidget(),
-                    const DeliveryTimeWidget(),
-                    const PaymentTypeWidget(),
-                    Image.asset("assets/png/chek.png"),
-                    Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: ElevatedButton(
-                          onPressed: () {
-                            showModalBottomSheet(
-                              context: context,
-                              builder: (context) {
-                                return const BottomSheetWidget();
-                              },
-                            );
-                          },
-                          child: const Text("Заказать")),
-                    ),
-                  ],
-                );
+                return const ActiveOrderWidget();
               },
               itemCount: 1),
           ListView.builder(
               itemBuilder: (context, index) {
-                return Column(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 16),
-                      child: NearestBranchWidget(),
-                    ),
-                    const PaymentTypeWidget(),
-                    Image.asset("assets/png/chek.png"),
-                    Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.pushNamed(context, AppRoutes.signup);
-                          },
-                          child: const Text("Заказать")),
-                    ),
-                  ],
-                );
+                return const HistoryOrderWidget();
               },
               itemCount: 1),
         ],

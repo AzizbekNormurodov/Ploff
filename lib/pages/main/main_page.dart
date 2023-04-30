@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ploff/pages/main/basket/basket_page.dart';
 import 'package:ploff/pages/main/%D1%81heckout/checkout_page.dart';
+import 'package:ploff/pages/main/my_orders/my_orders_page.dart';
 
 import 'home/home_page.dart';
 import 'profile/profile_page.dart';
@@ -20,10 +21,10 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
         body: IndexedStack(
           index: currentIndex,
-          children:   [
+          children:   const [
             HomePage(),
             BasketPage(),
-            CheckoutPage(),
+            MyordersPage(),
             ProfilePage(),
           ],
         ),
