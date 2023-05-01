@@ -5,7 +5,13 @@ import 'package:ploff/pages/main/basket/basket_page.dart';
 import 'package:ploff/pages/main/my_orders/active_order_page.dart';
 import 'package:ploff/pages/main/my_orders/history_order_oage.dart';
 import 'package:ploff/pages/main/product/product_page.dart';
+import 'package:ploff/pages/main/profile/about_service/about_service_page.dart';
+import 'package:ploff/pages/main/profile/edit_profile/edit_profile_page.dart';
+import 'package:ploff/pages/main/profile/filial/filial_page.dart';
+import 'package:ploff/pages/main/profile/filial/yunusobod_filial_page.dart';
+import 'package:ploff/pages/main/profile/my_addresses/my_adress_page.dart';
 import 'package:ploff/pages/main/profile/profile_page.dart';
+import 'package:ploff/pages/main/profile/settings/settings_page.dart';
 import 'package:ploff/pages/main/sign_up/details_page.dart';
 import 'package:ploff/pages/main/sign_up/pin_code_page.dart';
 import 'package:ploff/pages/splash/language_page.dart';
@@ -32,6 +38,13 @@ class AppPages {
     AppRoutes.profile: (context) => ProfilePage(),
     AppRoutes.active_order: (context) => ActiveOrderPage(),
     AppRoutes.history_order: (context) => HistoryOrderPage(),
+    AppRoutes.about_service: (context) => AboutServicePage(),
+    AppRoutes.edit_profile: (context) => EditProfilePage(),
+    AppRoutes.filial: (context) => FilialPage(),
+    AppRoutes.my_adress: (context) => MyAdressPage(),
+    AppRoutes.settings: (context) => SettingsPage(),
+    AppRoutes.yunusobod_filial: (context) => YunusobodFilialPage(),
+
 
 
   };

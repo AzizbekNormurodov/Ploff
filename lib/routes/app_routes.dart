@@ -15,5 +15,11 @@ class AppRoutes {
   static const String profile = '/profile';
   static const String active_order = '/active_order';
   static const String history_order = '/history_order';
+  static const String about_service = '/about_service';
+  static const String edit_profile = '/edit_profile';
+  static const String filial = '/filial';
+  static const String my_adress = '/my_adress';
+  static const String settings = '/settings';
+  static const String yunusobod_filial = '/yunusobod_filial';
 
 }
