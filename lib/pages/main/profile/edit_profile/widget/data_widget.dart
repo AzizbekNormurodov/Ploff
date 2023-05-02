@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DateWidget extends StatelessWidget {
-  DateWidget({Key? key,required this.text, required this.mode}) : super(key: key);
+  const DateWidget({Key? key,required this.text, required this.mode}) : super(key: key);
   final String text;
   final   CupertinoDatePickerMode mode;
 
@@ -13,9 +13,9 @@ class DateWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Text(
-            text, style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600,),
+            text, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600,),
             // style: context.text.boldTitle,
           ),
         ),

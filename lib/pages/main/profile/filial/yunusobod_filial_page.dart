@@ -3,8 +3,9 @@ import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 
 class YunusobodFilialPage extends StatefulWidget {
-  const YunusobodFilialPage({Key? key}) : super(key: key);
-
+   YunusobodFilialPage({Key? key,required this.title, required this.image}) : super(key: key);
+String title;
+String image;
   @override
   State<YunusobodFilialPage> createState() => _YunusobodFilialPageState();
 }
@@ -15,14 +16,14 @@ class _YunusobodFilialPageState extends State<YunusobodFilialPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Юнусабад"),
+        title:  Text(widget.title),
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 16),
         child: Container(
           height: 529,
           width: double.infinity,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(
               Radius.circular(12),
             ),
@@ -34,14 +35,14 @@ class _YunusobodFilialPageState extends State<YunusobodFilialPage> {
               Padding(
                 padding: const EdgeInsets.all(16),
                 child: Image.asset(
-                  "assets/png/yunusobod1.png",
+                  widget.image,
                   width: double.infinity,
                   height: 180,
                   fit: BoxFit.fill,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 16, bottom: 24),
+              const Padding(
+                padding: EdgeInsets.only(left: 16, bottom: 24),
                 child: Text(
                   "Юнусабад",
                   style: TextStyle(
@@ -78,7 +79,7 @@ class YunusobodItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox( height: 50,
       child: ListTile(
-        contentPadding: EdgeInsets.only(left: 12, top: 4),
+        contentPadding: const EdgeInsets.only(left: 12, top: 4),
         leading: Image.asset(
           icon,
           width: 24,
@@ -114,7 +115,7 @@ class YunusobodItem2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox( height: 50,
       child: ListTile(
-        contentPadding: EdgeInsets.only(left: 12, top: 4),
+        contentPadding: const EdgeInsets.only(left: 12, top: 4),
         leading: Image.asset(
           icon,
           width: 24,
@@ -129,7 +130,7 @@ class YunusobodItem2 extends StatelessWidget {
         ),
         trailing: Padding(
           padding: const EdgeInsets.only(right: 16),
-          child: Text(text2, style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500, color: Color(0xff0E73F6),),),
+          child: Text(text2, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500, color: Color(0xff0E73F6),),),
         ),
       ),
     );

@@ -9,6 +9,7 @@ import 'package:ploff/pages/main/profile/about_service/about_service_page.dart';
 import 'package:ploff/pages/main/profile/edit_profile/edit_profile_page.dart';
 import 'package:ploff/pages/main/profile/filial/filial_page.dart';
 import 'package:ploff/pages/main/profile/filial/yunusobod_filial_page.dart';
+import 'package:ploff/pages/main/profile/my_addresses/adress/adress_page.dart';
 import 'package:ploff/pages/main/profile/my_addresses/my_adress_page.dart';
 import 'package:ploff/pages/main/profile/profile_page.dart';
 import 'package:ploff/pages/main/profile/settings/settings_page.dart';
@@ -43,7 +44,11 @@ class AppPages {
     AppRoutes.filial: (context) => FilialPage(),
     AppRoutes.my_adress: (context) => MyAdressPage(),
     AppRoutes.settings: (context) => SettingsPage(),
-    AppRoutes.yunusobod_filial: (context) => YunusobodFilialPage(),
+    AppRoutes.yunusobod_filial: (context) {
+      var arg=ModalRoute.of(context)!.settings.arguments as ArgObject;
+      return  YunusobodFilialPage(title: arg.title, image: arg.image,);
+    },
+    AppRoutes.adress: (context) => AdressPage(),
 
 
 

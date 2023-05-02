@@ -78,17 +78,10 @@ class _MyordersPageState extends State<MyordersPage>
       ),
       body: TabBarView(
         controller: tabController,
-        children: [
-          ListView.builder(
-              itemBuilder: (context, index) {
-                return const ActiveOrderWidget();
-              },
-              itemCount: 1),
-          ListView.builder(
-              itemBuilder: (context, index) {
-                return const HistoryOrderWidget();
-              },
-              itemCount: 1),
+        children: const [
+           ActiveOrderWidget(),
+          HistoryOrderWidget(),
+
         ],
       ),
     );

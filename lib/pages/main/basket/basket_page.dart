@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 import 'package:ploff/pages/main/basket/widget/basket_widget.dart';
 import 'package:ploff/pages/main/basket/widget/button_widget.dart';
@@ -12,14 +11,14 @@ class BasketPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Корзина",
           style: ThemeTextStyles.status,
         ),
         automaticallyImplyLeading: false,
         centerTitle: true,
         actions: [
-          ButtonWidget(),
+          const ButtonWidget(),
         ],
       ),
       body: CustomScrollView(
@@ -46,7 +45,7 @@ class BasketPage extends StatelessWidget {
               child: Container(
                 width: 375,
                 height: 110,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.all(
                     Radius.circular(12),
@@ -56,15 +55,15 @@ class BasketPage extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 16, right: 16, top: 16,),
                   child: Column( crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Комментарий", style: ThemeTextStyles.order2),
-                      SizedBox(height: 10),
+                      const Text("Комментарий", style: ThemeTextStyles.order2),
+                      const SizedBox(height: 10),
                       SizedBox( height: 48,
                         child: TextField( textAlign: TextAlign.start,
-                          decoration: InputDecoration(counterStyle: TextStyle(color: Colors.green),
+                          decoration: InputDecoration(counterStyle: const TextStyle(color: Colors.green),
                             hintText: 'Напишите комментарий к заказу',
                             hintStyle: ThemeTextStyles.adress,
-                            fillColor: Color(0xffF5F5F5),
-                            enabledBorder: OutlineInputBorder( borderSide: BorderSide(width:0.0),
+                            fillColor: const Color(0xffF5F5F5),
+                            enabledBorder: OutlineInputBorder( borderSide: const BorderSide(width:0.0),
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
@@ -76,7 +75,7 @@ class BasketPage extends StatelessWidget {
               ),
             ),
           ),
-          BasketWidget(),
+          const BasketWidget(),
         ],
       ),
       bottomNavigationBar: Padding(

@@ -12,14 +12,14 @@ class EditProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar( centerTitle: true,
-        title: Text("Редактировать профиль"),
+        title: const Text("Редактировать профиль"),
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 16),
         child: Container(
           height: 292,
           width: double.infinity,
-          decoration: BoxDecoration( color: Colors.white,
+          decoration: const BoxDecoration( color: Colors.white,
             borderRadius: BorderRadius.all(
               Radius.circular(12),
             ),
@@ -27,8 +27,8 @@ class EditProfilePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 16, top: 16, bottom: 4 ),
+              const Padding(
+                padding: EdgeInsets.only(left: 16, top: 16, bottom: 4 ),
                 child: Text(
                   "Имя",
                   style: ThemeTextStyles.name,
@@ -38,7 +38,7 @@ class EditProfilePage extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 16, right: 16),
                 child: TextFormField(
                   style: ThemeTextStyles.inputname,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: 'Усмонов Акбар',
                       hintStyle: TextStyle(color: ThemeColors.black1),
                       fillColor: Color(0xffF5F5F5),
@@ -49,8 +49,8 @@ class EditProfilePage extends StatelessWidget {
                   // controller: cpfcontroller,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 16, top: 16, bottom: 4),
+              const Padding(
+                padding: EdgeInsets.only(left: 16, top: 16, bottom: 4),
                 child: Text(
                   "Номер телефона",
                   style: ThemeTextStyles.name,
@@ -61,7 +61,7 @@ class EditProfilePage extends StatelessWidget {
                 child: TextFormField(
                   style: ThemeTextStyles.inputname,
                   keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                       hintText: "+99893 564 92 29", hintStyle: TextStyle(color: ThemeColors.black3),
                       fillColor: Color(0xffF5F5F5),
                       labelStyle: TextStyle(fontSize: 10, color: Colors.black),
@@ -71,8 +71,8 @@ class EditProfilePage extends StatelessWidget {
                   // controller: cpfcontroller,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 16, top: 16, bottom: 4),
+              const Padding(
+                padding: EdgeInsets.only(left: 16, top: 16, bottom: 4),
                 child: Text(
                   "Ваш дата рождения",
                   style: ThemeTextStyles.name,
@@ -92,11 +92,11 @@ class EditProfilePage extends StatelessWidget {
                               text: "Дата рождения", mode: CupertinoDatePickerMode.date);
                         });
                   },
-                      child: Icon(Icons.calendar_today_outlined),),
-                      hintText: "11.09.1991", hintStyle: TextStyle(color: ThemeColors.black1),
-                      fillColor: Color(0xffF5F5F5),
-                      labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                      border: OutlineInputBorder(
+                      child: const Icon(Icons.calendar_today_outlined),),
+                      hintText: "11.09.1991", hintStyle: const TextStyle(color: ThemeColors.black1),
+                      fillColor: const Color(0xffF5F5F5),
+                      labelStyle: const TextStyle(fontSize: 10, color: Colors.black),
+                      border: const OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(8)),
                       ),),
                   // controller: cpfcontroller,
@@ -108,7 +108,7 @@ class EditProfilePage extends StatelessWidget {
       ),
       bottomSheet: Padding(
         padding: const EdgeInsets.only(left: 16, right: 16, bottom: 16),
-        child: ElevatedButton(onPressed: (){},child: Text("Сохранить"),),
+        child: ElevatedButton(onPressed: (){},child: const Text("Сохранить"),),
       ),
     );
   }

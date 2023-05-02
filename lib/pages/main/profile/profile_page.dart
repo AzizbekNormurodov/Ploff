@@ -12,7 +12,7 @@ class ProfilePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         automaticallyImplyLeading: false,
-        title: Text(
+        title: const Text(
           "Профиль",
           style: ThemeTextStyles.status,
         ),
@@ -24,7 +24,7 @@ class ProfilePage extends StatelessWidget {
             child: Container(
               width: double.infinity,
               height: 87,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.all(
                   Radius.circular(12),
@@ -37,14 +37,14 @@ class ProfilePage extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(top: 16, bottom: 8),
+                        const Padding(
+                          padding: EdgeInsets.only(top: 16, bottom: 8),
                           child: Text(
                             "Усмонов Акбар",
                             style: ThemeTextStyles.status,
                           ),
                         ),
-                        Text(
+                        const Text(
                           "+998 12 433 87 32",
                           style: TextStyle(
                               fontSize: 15,
@@ -69,7 +69,7 @@ class ProfilePage extends StatelessWidget {
             child: Container(
               width: double.infinity,
               height: 259,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.all(
                   Radius.circular(12),
@@ -136,7 +136,7 @@ class ProfileItem extends StatelessWidget {
       ),
       child: ListTile(
         onTap: onTap,
-        contentPadding: EdgeInsets.only(left: 12, top: 4),
+        contentPadding: const EdgeInsets.only(left: 12, top: 4),
         leading: Image.asset(
           icon,
           width: 40,
@@ -149,8 +149,8 @@ class ProfileItem extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
-        trailing: Padding(
-          padding: const EdgeInsets.only(right: 16),
+        trailing: const Padding(
+          padding: EdgeInsets.only(right: 16),
           child: Icon(Icons.chevron_right_outlined),
         ),
       ),

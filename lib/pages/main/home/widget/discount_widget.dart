@@ -14,7 +14,7 @@ class DiscountWidget extends StatelessWidget {
         child: Container(
           width: double.infinity,
           height: 527,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.all(
               Radius.circular(12),
@@ -25,8 +25,8 @@ class DiscountWidget extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 16),
+                const Padding(
+                  padding: EdgeInsets.only(top: 16),
                   child: Text(
                     "Со скидкой",
                     style: ThemeTextStyles.text2,
@@ -64,11 +64,11 @@ class ContainerWidget extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Чайханский плов",
                       style: ThemeTextStyles.order2,
                     ),
-                    Text(
+                    const Text(
                       "Своим именем чайханский плов обязан \nстарой ташкентской традиции «ош»...", style: TextStyle(
                       fontSize: 13, fontWeight: FontWeight.w400, color: ThemeColors.black3,
                     ),),

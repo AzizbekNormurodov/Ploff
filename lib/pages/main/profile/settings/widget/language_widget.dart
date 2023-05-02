@@ -47,7 +47,7 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                       padding: const EdgeInsets.only( right: 16, top: 12, bottom: 12),
                       child: Image.asset("assets/png/uz.png"),
                     ),
-                    Text(
+                    const Text(
                       "O’zbekcha",
                       textAlign: TextAlign.start,
                       style: TextStyle(
@@ -69,7 +69,7 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                       padding: const EdgeInsets.only(right: 16, top: 12, bottom: 12),
                       child: Image.asset("assets/png/ru.png"),
                     ),
-                    Text(
+                    const Text(
                       "Русский",
                       textAlign: TextAlign.start,
                       style: TextStyle(
@@ -91,7 +91,7 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                       padding: const EdgeInsets.only(right: 16, top: 12, bottom: 12),
                       child: Image.asset("assets/png/eng.png"),
                     ),
-                    Text(
+                    const Text(
                       "English",
                       textAlign: TextAlign.start,
                       style: TextStyle(

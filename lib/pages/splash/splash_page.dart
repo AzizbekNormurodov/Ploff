@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../core/theme/theme_colors.dart';
 import '../../routes/app_routes.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class _SplashPageState extends State<SplashPage> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     Future.delayed(
-      const Duration(seconds: 2),
+      const Duration(seconds: 4),
       () {
         Navigator.pushReplacementNamed(context, AppRoutes.language);
       },
@@ -30,10 +31,16 @@ class _SplashPageState extends State<SplashPage> {
         backgroundColor: Colors.white,
       ),
       backgroundColor: Colors.white,
-      body: const Center(
-        child: Image(
-          image: AssetImage('assets/png/logo.png'),
-        ),
+      body: Column(
+        children: const [
+          Padding(
+            padding: EdgeInsets.only(top: 200, left: 52, right: 52),
+            child: Image(
+              image: AssetImage('assets/png/logo.png'),
+            ),
+          ),
+          SpinKitWave(color: Colors.black12),
+        ],
       ),
     );
   }

@@ -21,7 +21,7 @@ class _SettingsPageState extends State<SettingsPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Настройки",
           style: ThemeTextStyles.appTitle,
         ),
@@ -32,7 +32,7 @@ class _SettingsPageState extends State<SettingsPage> {
             showModalBottomSheet(
                 context: context,
                 builder: (context) {
-                  return  LanguageWidget();
+                  return  const LanguageWidget();
                 });
           },
             child: Padding(
@@ -40,7 +40,7 @@ class _SettingsPageState extends State<SettingsPage> {
               child: Container(
                 width: double.infinity,
                 height: 64,
-                decoration: BoxDecoration( color: Colors.white,
+                decoration: const BoxDecoration( color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(12))),
                 child: Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -50,14 +50,14 @@ class _SettingsPageState extends State<SettingsPage> {
                           padding: const EdgeInsets.all(16),
                           child: Image.asset("assets/png/world.png"),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 16, bottom: 16),
+                        const Padding(
+                          padding: EdgeInsets.only(top: 16, bottom: 16),
                           child: Text("Язык",style: ThemeTextStyles.setting,),
                         ),
                       ],
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 16),
+                    const Padding(
+                      padding: EdgeInsets.only(right: 16),
                       child: Icon(Icons.chevron_right_outlined, color: Color(0xff818C99)),
                     ),
                   ],
@@ -68,7 +68,7 @@ class _SettingsPageState extends State<SettingsPage> {
           Container(
             width: double.infinity,
             height: 64,
-            decoration: BoxDecoration( color: Colors.white,
+            decoration: const BoxDecoration( color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(12))),
             child: Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -78,8 +78,8 @@ class _SettingsPageState extends State<SettingsPage> {
                       padding: const EdgeInsets.all(16.0),
                       child: Image.asset("assets/png/notification.png"),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only( top: 16, bottom: 16),
+                    const Padding(
+                      padding: EdgeInsets.only( top: 16, bottom: 16),
                       child: Text("Уведомлений", style: ThemeTextStyles.setting,),
                     ),
                   ],

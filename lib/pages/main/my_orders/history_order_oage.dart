@@ -89,7 +89,7 @@ class HistoryOrderPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Image.asset("assets/png/account.png"),
-                  SizedBox(width: 10,),
+                  const SizedBox(width: 10,),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
@@ -116,7 +116,7 @@ class HistoryOrderPage extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
-            child: ElevatedButton(onPressed: (){}, child: Text("Повторить заказ")),
+            child: ElevatedButton(onPressed: (){}, child: const Text("Повторить заказ")),
           ),
         ],
       ),

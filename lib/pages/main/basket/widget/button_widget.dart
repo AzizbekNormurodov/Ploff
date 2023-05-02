@@ -18,12 +18,12 @@ class ButtonWidget extends StatelessWidget {
             builder: (context) {
               return Theme( data: ThemeData(backgroundColor: Colors.white),
                 child: AlertDialog(
-                  title: Text(
+                  title: const Text(
                     textAlign: TextAlign.center,
                     'Очистить корзину?',
                     style: ThemeTextStyles.status,
                   ),
-                  content: Text( textAlign: TextAlign.center,
+                  content: const Text( textAlign: TextAlign.center,
                     'Вы уверены, что хотите \nочистить корзину?',
                     style: TextStyle(
                         fontSize: 15,
@@ -35,26 +35,26 @@ class ButtonWidget extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                           borderRadius:
                           BorderRadius.circular(8)),
-                      minimumSize: Size(120, 42),
+                      minimumSize: const Size(120, 42),
                       textStyle: Theme.of(context)
                           .textTheme
-                          .labelLarge,backgroundColor: Color(0xffF2F2F2),
+                          .labelLarge,backgroundColor: const Color(0xffF2F2F2),
                     ),
                       onPressed: (){
                       Navigator.pop(context);
-                      }, child: Text("Нет", style: ThemeTextStyles.order2,),),
+                      }, child: const Text("Нет", style: ThemeTextStyles.order2,),),
                     ElevatedButton(style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius:
                           BorderRadius.circular(8)),
-                      minimumSize: Size(120, 42),
+                      minimumSize: const Size(120, 42),
                       textStyle: Theme.of(context)
                           .textTheme
                           .labelLarge, backgroundColor: ThemeColors.primary,
                     ),
                       onPressed: (){
                       Navigator.pushNamed(context, AppRoutes.basket_empty);
-                      }, child: Text("Да", style: ThemeTextStyles.order2,),),
+                      }, child: const Text("Да", style: ThemeTextStyles.order2,),),
 
                   ], backgroundColor: Colors.white,
                 ),

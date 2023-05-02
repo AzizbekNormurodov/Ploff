@@ -10,13 +10,13 @@ class BasketEmptyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Корзина",
           style: ThemeTextStyles.status,
         ),
         automaticallyImplyLeading: false,
         centerTitle: true,
-        actions: [
+        actions: const [
           ButtonWidget(),
         ],
       ),

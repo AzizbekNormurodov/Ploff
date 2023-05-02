@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 import 'package:ploff/pages/main/product/widget/bottomsheet_widget.dart';
 import 'package:ploff/pages/main/product/widget/recommended_widget.dart';
@@ -70,11 +69,11 @@ class _ProductPageState extends State<ProductPage> {
 
 
           ),
-          SliverToBoxAdapter(child: ProductWidget()),
-          SliverToBoxAdapter(child: SizeWidget()),
-          SliverToBoxAdapter(child: AdditivesToWidget()),
-          SliverToBoxAdapter(child: GroupWidget()),
-          SliverToBoxAdapter(child: RecommendedWidget(),),
+          const SliverToBoxAdapter(child: ProductWidget()),
+          const SliverToBoxAdapter(child: SizeWidget()),
+          const SliverToBoxAdapter(child: AdditivesToWidget()),
+          const SliverToBoxAdapter(child: GroupWidget()),
+          const SliverToBoxAdapter(child: RecommendedWidget(),),
           SliverToBoxAdapter(child: Image.asset("assets/png/counter.png"),),
 
         ]

@@ -71,29 +71,29 @@ final lightTheme = ThemeData(
         ),
       ),
     ),
-    inputDecorationTheme: const InputDecorationTheme(
+    inputDecorationTheme:  InputDecorationTheme(
       filled: true,
       fillColor: ThemeColors.backgroundColor,
       contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.all(Radius.circular(12)),
+      border: OutlineInputBorder( borderSide: BorderSide.none,
+        borderRadius: BorderRadius.all(Radius.circular(8)),
         // borderSide: BorderSide(
         //   color: Colors.transparent,
         //   width: 1,
         // ),
       ),
-      enabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.all(Radius.circular(12)),
+      enabledBorder: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+        borderRadius: BorderRadius.all(Radius.circular(8)),
         // borderSide: BorderSide(
         //   color: Colors.transparent,
         //   width: 1,
         // ),
       ),
       focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.all(Radius.circular(12)),
+        borderRadius: BorderRadius.all(Radius.circular(8)),
         borderSide: BorderSide(
           color: ThemeColors.primary,
-          width: 1,
+          width: 0,
         ),
       ),
       labelStyle: TextStyle(

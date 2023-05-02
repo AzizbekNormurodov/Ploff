@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 import 'package:ploff/pages/main/home/widget/discount_widget.dart';
 

@@ -12,7 +12,7 @@ class PopularWidget extends StatelessWidget {
       child: Container(
         width: double.infinity,
         height: 407,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.all(
             Radius.circular(12),
@@ -23,9 +23,9 @@ class PopularWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 16),
-                child: const Text(
+              const Padding(
+                padding: EdgeInsets.only(top: 16),
+                child: Text(
                   "Популярные блюда",
                   style: ThemeTextStyles.text2,
                 ),

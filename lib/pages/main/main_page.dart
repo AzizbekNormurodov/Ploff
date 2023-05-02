@@ -21,7 +21,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
         body: IndexedStack(
           index: currentIndex,
-          children:   const [
+          children:   [
             HomePage(),
             BasketPage(),
             MyordersPage(),
