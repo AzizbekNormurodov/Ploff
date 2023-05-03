@@ -103,7 +103,7 @@ class _ProductPageState extends State<ProductPage> {
                     },
                   );
                 },
-                child: const Text("Добавить в корзину "),
+                child: const Text("Добавить в корзину"),
               ),
             ],
           ),

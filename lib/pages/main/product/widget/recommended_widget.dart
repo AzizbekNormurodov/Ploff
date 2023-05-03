@@ -98,7 +98,8 @@ class RecommendedItem extends StatelessWidget {
               child: ElevatedButton(
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.white),
-                    minimumSize: MaterialStateProperty.all(const Size(132, 36))),
+                    minimumSize:
+                        MaterialStateProperty.all(const Size(132, 36))),
                 onPressed: () {},
                 child: Text(cost),
               ),

@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       onTap: () {
         FocusManager.instance.primaryFocus?.unfocus();
       },
-      child: MaterialApp( debugShowCheckedModeBanner: false,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'EasyToTravel',
         theme: lightTheme,
         initialRoute: AppRoutes.initial,
@@ -26,4 +27,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

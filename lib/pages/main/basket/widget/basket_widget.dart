@@ -23,7 +23,7 @@ class BasketWidget extends StatelessWidget {
               padding: EdgeInsets.all(16),
               child: Text("Рекомендуемый", style: ThemeTextStyles.appTitle),
             ),
-            Container(
+            SizedBox(
               width: 375,
               height: 182,
               child: Padding(
@@ -98,7 +98,8 @@ class BasketItem extends StatelessWidget {
               child: ElevatedButton(
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.white),
-                    minimumSize: MaterialStateProperty.all(const Size(104, 32))),
+                    minimumSize:
+                        MaterialStateProperty.all(const Size(104, 32))),
                 onPressed: () {},
                 child: Text(cost),
               ),

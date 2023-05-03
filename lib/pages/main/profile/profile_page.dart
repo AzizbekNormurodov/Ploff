@@ -13,7 +13,7 @@ class ProfilePage extends StatelessWidget {
         centerTitle: true,
         automaticallyImplyLeading: false,
         title: const Text(
-          "Профиль",
+          "Профиль ",
           style: ThemeTextStyles.status,
         ),
       ),

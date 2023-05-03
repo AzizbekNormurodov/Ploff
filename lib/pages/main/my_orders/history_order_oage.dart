@@ -30,7 +30,7 @@ class HistoryOrderPage extends StatelessWidget {
                 children: [
                   Padding(
                     padding:
-                    const EdgeInsets.only(left: 16, right: 16, top: 16),
+                        const EdgeInsets.only(left: 16, right: 16, top: 16),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -41,7 +41,8 @@ class HistoryOrderPage extends StatelessWidget {
                         ElevatedButton(
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
-                                const Color.fromRGBO(34, 195, 72, 0.1),),
+                              const Color.fromRGBO(34, 195, 72, 0.1),
+                            ),
                             minimumSize: MaterialStateProperty.all(
                               const Size(101, 32),
                             ),
@@ -89,7 +90,9 @@ class HistoryOrderPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Image.asset("assets/png/account.png"),
-                  const SizedBox(width: 10,),
+                  const SizedBox(
+                    width: 10,
+                  ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
@@ -101,7 +104,7 @@ class HistoryOrderPage extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        "Abdullajanov Murod",
+                        "Asadbek Murod",
                         style: ThemeTextStyles.adress,
                       ),
                     ],
@@ -114,12 +117,12 @@ class HistoryOrderPage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 12),
             child: Image.asset("assets/png/chek.png"),
           ),
-
         ],
       ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
-        child: ElevatedButton(onPressed: (){}, child: const Text("Повторить заказ")),
+        child: ElevatedButton(
+            onPressed: () {}, child: const Text("Повторить заказ")),
       ),
     );
   }

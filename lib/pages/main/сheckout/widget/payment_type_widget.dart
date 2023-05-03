@@ -20,7 +20,7 @@ class _PaymentTypeWidgetState extends State<PaymentTypeWidget> {
         width: double.infinity,
         height: 214,
         decoration: const BoxDecoration(
-          color: Colors.white,
+          color: Colors.white70,
           borderRadius: BorderRadius.all(
             Radius.circular(12),
           ),
@@ -66,7 +66,7 @@ class _PaymentTypeWidgetState extends State<PaymentTypeWidget> {
             ),
             ListTile(
               leading: Image.asset("assets/png/click logo.png"),
-              title: const Text('Click'),
+              title: const Text("Cilic"),
               trailing: Radio(
                 activeColor: ThemeColors.primary,
                 value: "Да",

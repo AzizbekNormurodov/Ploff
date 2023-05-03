@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../../core/theme/theme_colors.dart';
 import 'confirmator_codi.dart';
 
-
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
 
@@ -33,9 +32,9 @@ class _SignUpPageState extends State<SignUpPage> {
 
         setState(() {});
       },
-      child: Scaffold( backgroundColor: Colors.white,
-        appBar: AppBar(
-        ),
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        appBar: AppBar(),
         body: Padding(
           padding: const EdgeInsets.only(left: 16.0, right: 16.0),
           child: Column(
@@ -87,8 +86,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           setState(() {});
                         },
                         decoration: InputDecoration(
-                          hintText:
-                          showHintText ? 'Enter phone number' : '',
+                          hintText: showHintText ? 'Enter phone number' : '',
                           hintStyle: const TextStyle(
                               letterSpacing: 0.2,
                               fontSize: 15.0,
@@ -101,17 +99,19 @@ class _SignUpPageState extends State<SignUpPage> {
                           filled: true,
                           enabledBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
-                                width: 1.5,
-                                color: ThemeColors.primary,),
+                              width: 1.5,
+                              color: ThemeColors.primary,
+                            ),
                             borderRadius:
-                            BorderRadius.all(Radius.circular(10.0)),
+                                BorderRadius.all(Radius.circular(10.0)),
                           ),
                           focusedBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
-                                width: 1.5,
-                                color: ThemeColors.primary,),
+                              width: 1.5,
+                              color: ThemeColors.primary,
+                            ),
                             borderRadius:
-                            BorderRadius.all(Radius.circular(10.0)),
+                                BorderRadius.all(Radius.circular(10.0)),
                           ),
                         ),
                         style: const TextStyle(
@@ -134,7 +134,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   child: Material(
                     clipBehavior: Clip.antiAlias,
                     borderRadius: BorderRadius.circular(10.0),
-                    color:  ThemeColors.primary,
+                    color: ThemeColors.primary,
                     child: InkWell(
                       onTap: () {
                         if (phoneController.text.isEmpty) {

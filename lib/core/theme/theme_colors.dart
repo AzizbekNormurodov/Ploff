@@ -12,5 +12,4 @@ class ThemeColors {
   static const Color black2 = Color(0xff5F5F5F);
   static const Color black5 = Color(0xff9AA6AC);
   static const Color black3 = Color(0xff858585);
-
 }

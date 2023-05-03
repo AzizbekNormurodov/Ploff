@@ -13,54 +13,67 @@ class ButtonWidget extends StatelessWidget {
         right: 19,
       ),
       child: InkWell(
-          onTap: () { showDialog(
-            context: context,
-            builder: (context) {
-              return Theme( data: ThemeData(backgroundColor: Colors.white),
-                child: AlertDialog(
-                  title: const Text(
-                    textAlign: TextAlign.center,
-                    'Очистить корзину?',
-                    style: ThemeTextStyles.status,
-                  ),
-                  content: const Text( textAlign: TextAlign.center,
-                    'Вы уверены, что хотите \nочистить корзину?',
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                        color: ThemeColors.black3),
-                  ),
-                  actions: [
-                    ElevatedButton( style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                          borderRadius:
-                          BorderRadius.circular(8)),
-                      minimumSize: const Size(120, 42),
-                      textStyle: Theme.of(context)
-                          .textTheme
-                          .labelLarge,backgroundColor: const Color(0xffF2F2F2),
+          onTap: () {
+            showDialog(
+              context: context,
+              builder: (context) {
+                return Theme(
+                  data: ThemeData(backgroundColor: Colors.white),
+                  child: AlertDialog(
+                    title: const Text(
+                      textAlign: TextAlign.center,
+                      'Очистить корзину?',
+                      style: ThemeTextStyles.status,
                     ),
-                      onPressed: (){
-                      Navigator.pop(context);
-                      }, child: const Text("Нет", style: ThemeTextStyles.order2,),),
-                    ElevatedButton(style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                          borderRadius:
-                          BorderRadius.circular(8)),
-                      minimumSize: const Size(120, 42),
-                      textStyle: Theme.of(context)
-                          .textTheme
-                          .labelLarge, backgroundColor: ThemeColors.primary,
+                    content: const Text(
+                      textAlign: TextAlign.center,
+                      'Вы уверены, что хотите \nочистить корзину?',
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                          color: ThemeColors.black3),
                     ),
-                      onPressed: (){
-                      Navigator.pushNamed(context, AppRoutes.basket_empty);
-                      }, child: const Text("Да", style: ThemeTextStyles.order2,),),
-
-                  ], backgroundColor: Colors.white,
-                ),
-              );
-            },);
-          }, child: Image.asset("assets/png/Recycle Bin.png")),
+                    actions: [
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8)),
+                          minimumSize: const Size(120, 42),
+                          textStyle: Theme.of(context).textTheme.labelLarge,
+                          backgroundColor: const Color(0xffF2F2F2),
+                        ),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        child: const Text(
+                          "Нет",
+                          style: ThemeTextStyles.order2,
+                        ),
+                      ),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8)),
+                          minimumSize: const Size(120, 42),
+                          textStyle: Theme.of(context).textTheme.labelLarge,
+                          backgroundColor: ThemeColors.primary,
+                        ),
+                        onPressed: () {
+                          Navigator.pushNamed(context, AppRoutes.basket_empty);
+                        },
+                        child: const Text(
+                          "Да",
+                          style: ThemeTextStyles.order2,
+                        ),
+                      ),
+                    ],
+                    backgroundColor: Colors.white,
+                  ),
+                );
+              },
+            );
+          },
+          child: Image.asset("assets/png/Recycle Bin.png")),
     );
   }
 }

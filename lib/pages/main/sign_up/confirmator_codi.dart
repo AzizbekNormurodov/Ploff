@@ -15,7 +15,7 @@ class ConfirmationCodePage extends StatefulWidget {
 
 class _ConfirmationCodePageState extends State<ConfirmationCodePage> {
   List<TextEditingController> codeControllers =
-  List.generate(6, (int index) => TextEditingController());
+      List.generate(6, (int index) => TextEditingController());
 
   final focus = FocusNode();
 
@@ -29,7 +29,8 @@ class _ConfirmationCodePageState extends State<ConfirmationCodePage> {
           currentFocus.unfocus();
         }
       },
-      child: Scaffold( backgroundColor: Colors.white,
+      child: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           toolbarHeight: 76.0,
           elevation: 0.0,
@@ -112,14 +113,14 @@ class _ConfirmationCodePageState extends State<ConfirmationCodePage> {
                                   keyboardType: TextInputType.number,
                                   textInputAction: TextInputAction.done,
                                   cursorColor:
-                                  const Color.fromARGB(255, 112, 87, 247),
+                                      const Color.fromARGB(255, 112, 87, 247),
                                   textAlign: TextAlign.center,
                                   decoration: InputDecoration(
                                     hintStyle: const TextStyle(
                                         letterSpacing: 0.2,
                                         fontSize: 15.0,
                                         color:
-                                        Color.fromARGB(255, 194, 195, 197),
+                                            Color.fromARGB(255, 194, 195, 197),
                                         fontFamily: 'SFProDisplay',
                                         fontWeight: FontWeight.w400),
                                     contentPadding: const EdgeInsets.symmetric(
@@ -128,23 +129,24 @@ class _ConfirmationCodePageState extends State<ConfirmationCodePage> {
                                         255, 246, 246, 246),
                                     filled: true,
                                     enabledBorder: OutlineInputBorder(
-                                      borderSide: codeControllers[i]
-                                          .text
-                                          .isNotEmpty
-                                          ? const BorderSide(
-                                          width: 1.5,
-                                          color: ThemeColors.primary,)
-                                          : const BorderSide(
-                                          width: 0.0,
-                                          color: Color.fromARGB(
-                                              255, 246, 246, 246)),
+                                      borderSide:
+                                          codeControllers[i].text.isNotEmpty
+                                              ? const BorderSide(
+                                                  width: 1.5,
+                                                  color: ThemeColors.primary,
+                                                )
+                                              : const BorderSide(
+                                                  width: 0.0,
+                                                  color: Color.fromARGB(
+                                                      255, 246, 246, 246)),
                                       borderRadius: const BorderRadius.all(
                                           Radius.circular(10.0)),
                                     ),
                                     focusedBorder: const OutlineInputBorder(
                                       borderSide: BorderSide(
-                                          width: 1.5,
-                                          color: ThemeColors.primary,),
+                                        width: 1.5,
+                                        color: ThemeColors.primary,
+                                      ),
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(10.0)),
                                     ),
@@ -183,7 +185,7 @@ class _ConfirmationCodePageState extends State<ConfirmationCodePage> {
                   child: Material(
                     clipBehavior: Clip.antiAlias,
                     borderRadius: BorderRadius.circular(10.0),
-                    color:  ThemeColors.primary,
+                    color: ThemeColors.primary,
                     child: InkWell(
                       onTap: () {
                         Navigator.pushNamed(context, AppRoutes.profile);

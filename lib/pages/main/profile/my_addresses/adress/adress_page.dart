@@ -14,11 +14,17 @@ class AdressPage extends StatelessWidget {
         child: Stack(
           children: [
             Image.asset("assets/png/image_map.png"),
-            const Positioned( top: 88, left: 104, right: 105,
-                child: Text("Учтепа Район \nБешкайрагач 12", style: ThemeTextStyles.text2, textAlign: TextAlign.center,)),
-            const Positioned(bottom: 0, right: 0, left: 0,
-                child: DeliveryAddressWidget()),
-
+            const Positioned(
+                top: 88,
+                left: 104,
+                right: 105,
+                child: Text(
+                  "Учтепа Район \nБешкайрагач 12",
+                  style: ThemeTextStyles.text2,
+                  textAlign: TextAlign.center,
+                )),
+            const Positioned(
+                bottom: 0, right: 0, left: 0, child: DeliveryAddressWidget()),
           ],
         ),
       ),

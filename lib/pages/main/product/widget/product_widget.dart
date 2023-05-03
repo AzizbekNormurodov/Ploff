@@ -11,6 +11,7 @@ class ProductWidget extends StatefulWidget {
 
 class _ProductWidgetState extends State<ProductWidget> {
   String? gender;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -81,10 +82,11 @@ class SizeWidget extends StatefulWidget {
 
 class _SizeWidgetState extends State<SizeWidget> {
   String? gender1;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only( bottom: 16),
+      padding: const EdgeInsets.only(bottom: 16),
       child: Container(
         width: double.infinity,
         height: 158,
@@ -98,12 +100,18 @@ class _SizeWidgetState extends State<SizeWidget> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-             Padding(
-              padding:  const EdgeInsets.only(top: 16, left: 16),
+            Padding(
+              padding: const EdgeInsets.only(top: 16, left: 16),
               child: Row(
                 children: const [
-                  Text("Размер", style: ThemeTextStyles.appTitle,),
-                  Text("*", style: TextStyle(color: Colors.red),),
+                  Text(
+                    "Размер",
+                    style: ThemeTextStyles.appTitle,
+                  ),
+                  Text(
+                    "*",
+                    style: TextStyle(color: Colors.red),
+                  ),
                 ],
               ),
             ),
@@ -143,4 +151,3 @@ class _SizeWidgetState extends State<SizeWidget> {
     );
   }
 }
-

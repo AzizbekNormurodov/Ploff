@@ -3,8 +3,8 @@ import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 
 class YunusobodFilialPage extends StatefulWidget {
-   YunusobodFilialPage({Key? key,required this.title}) : super(key: key);
-String title;
+  YunusobodFilialPage({Key? key, required this.title}) : super(key: key);
+  String title;
 
   @override
   State<YunusobodFilialPage> createState() => _YunusobodFilialPageState();
@@ -16,7 +16,7 @@ class _YunusobodFilialPageState extends State<YunusobodFilialPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title:  Text(widget.title),
+        title: Text(widget.title),
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 16),
@@ -34,7 +34,8 @@ class _YunusobodFilialPageState extends State<YunusobodFilialPage> {
             children: [
               Padding(
                 padding: const EdgeInsets.all(16),
-                child: Image.asset("assets/png/yunusobod1.png",
+                child: Image.asset(
+                  "assets/png/yunusobod1.png",
                   width: double.infinity,
                   height: 180,
                   fit: BoxFit.fill,
@@ -50,11 +51,27 @@ class _YunusobodFilialPageState extends State<YunusobodFilialPage> {
                   ),
                 ),
               ),
-              YunusobodItem(icon: "assets/png/locat.png", text: "Адрес", text2: "Массив Юнусабад 19"),
-              YunusobodItem(icon: "assets/png/pointer.png", text: "Ориентир", text2: "Юнусабад"),
-              YunusobodItem(icon: "assets/png/watch.png", text: "Часы работы", text2: "8:00-23:00"),
-              YunusobodItem(icon: "assets/png/call.png", text: "Номер телефона", text2: "Номер телефона"),
-              YunusobodItem2(icon: "assets/png/Link.png", text: "Ссылка", text2: "https://yandex.uz/maps/10335",),
+              YunusobodItem(
+                  icon: "assets/png/locat.png",
+                  text: "Адрес",
+                  text2: "Массив Юнусабад 19"),
+              YunusobodItem(
+                  icon: "assets/png/pointer.png",
+                  text: "Ориентир",
+                  text2: "Юнусабад"),
+              YunusobodItem(
+                  icon: "assets/png/watch.png",
+                  text: "Часы работы",
+                  text2: "8:00-23:00"),
+              YunusobodItem(
+                  icon: "assets/png/call.png",
+                  text: "Номер телефона",
+                  text2: "Номер телефона"),
+              YunusobodItem2(
+                icon: "assets/png/Link.png",
+                text: "Ссылка",
+                text2: "https://yandex.uz/maps/10335",
+              ),
             ],
           ),
         ),
@@ -64,7 +81,7 @@ class _YunusobodFilialPageState extends State<YunusobodFilialPage> {
 }
 
 class YunusobodItem extends StatelessWidget {
-   YunusobodItem({
+  YunusobodItem({
     Key? key,
     required this.icon,
     required this.text,
@@ -76,7 +93,8 @@ class YunusobodItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox( height: 50,
+    return SizedBox(
+      height: 50,
       child: ListTile(
         contentPadding: const EdgeInsets.only(left: 12, top: 4),
         leading: Image.asset(
@@ -86,21 +104,26 @@ class YunusobodItem extends StatelessWidget {
         ),
         title: Text(
           text,
-          style: const TextStyle( color: ThemeColors.black2,
+          style: const TextStyle(
+            color: ThemeColors.black2,
             fontSize: 15,
             fontWeight: FontWeight.w400,
           ),
         ),
         trailing: Padding(
           padding: const EdgeInsets.only(right: 16),
-          child: Text(text2, style: ThemeTextStyles.order2,),
+          child: Text(
+            text2,
+            style: ThemeTextStyles.order2,
+          ),
         ),
       ),
     );
   }
 }
+
 class YunusobodItem2 extends StatelessWidget {
-   YunusobodItem2({
+  YunusobodItem2({
     Key? key,
     required this.icon,
     required this.text,
@@ -112,7 +135,8 @@ class YunusobodItem2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox( height: 50,
+    return SizedBox(
+      height: 50,
       child: ListTile(
         contentPadding: const EdgeInsets.only(left: 12, top: 4),
         leading: Image.asset(
@@ -122,14 +146,22 @@ class YunusobodItem2 extends StatelessWidget {
         ),
         title: Text(
           text,
-          style: const TextStyle( color: ThemeColors.black2,
+          style: const TextStyle(
+            color: ThemeColors.black2,
             fontSize: 15,
             fontWeight: FontWeight.w400,
           ),
         ),
         trailing: Padding(
           padding: const EdgeInsets.only(right: 16),
-          child: Text(text2, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500, color: Color(0xff0E73F6),),),
+          child: Text(
+            text2,
+            style: const TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w500,
+              color: Color(0xff0E73F6),
+            ),
+          ),
         ),
       ),
     );

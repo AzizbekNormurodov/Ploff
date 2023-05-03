@@ -28,14 +28,14 @@ class AppPages {
   static final Map<String, WidgetBuilder> routes = {
     AppRoutes.initial: (context) => const SplashPage(),
     AppRoutes.signup: (context) => const SignUpPage(),
-    AppRoutes.main: (context) =>  const MainPage(),
-    AppRoutes.details: (context) =>  DetailsPage(),
-    AppRoutes.pincode: (context) =>  const PinCodePage(),
+    AppRoutes.main: (context) => const MainPage(),
+    AppRoutes.details: (context) => const DetailsPage(),
+    AppRoutes.pincode: (context) => const PinCodePage(),
     AppRoutes.language: (context) => const LanguagePage(),
     AppRoutes.product: (context) => const ProductPage(),
     AppRoutes.basket_empty: (context) => const BasketEmptyPage(),
     AppRoutes.basket: (context) => const BasketPage(),
-    AppRoutes.checkout: (context) => CheckoutPage(),
+    AppRoutes.checkout: (context) => const CheckoutPage(),
     AppRoutes.profile: (context) => const ProfilePage(),
     AppRoutes.active_order: (context) => const ActiveOrderPage(),
     AppRoutes.history_order: (context) => const HistoryOrderPage(),
@@ -45,12 +45,11 @@ class AppPages {
     AppRoutes.my_adress: (context) => const MyAdressPage(),
     AppRoutes.settings: (context) => const SettingsPage(),
     AppRoutes.yunusobod_filial: (context) {
-      var arg=ModalRoute.of(context)!.settings.arguments as ArgObject;
-      return  YunusobodFilialPage(title: arg.title,);
+      var arg = ModalRoute.of(context)!.settings.arguments as ArgObject;
+      return YunusobodFilialPage(
+        title: arg.title,
+      );
     },
     AppRoutes.adress: (context) => const AdressPage(),
-
-
-
   };
 }

@@ -22,5 +22,4 @@ class AppRoutes {
   static const String settings = '/settings';
   static const String yunusobod_filial = '/yunusobod_filial';
   static const String adress = '/adress';
-
 }

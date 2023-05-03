@@ -17,8 +17,7 @@ class ActiveOrderWidget extends StatelessWidget {
               child: Image.asset("assets/png/aktivzakas.png")),
         ),
         Padding(
-          padding: const EdgeInsets.only(
-              top: 338, left: 111, right: 112),
+          padding: const EdgeInsets.only(top: 338, left: 111, right: 112),
           child: Image.asset(
             "assets/png/messanger.png",
             width: 152,

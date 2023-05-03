@@ -23,7 +23,7 @@ class ActiveOrderPage extends StatelessWidget {
                 borderRadius: BorderRadius.all(
                   Radius.circular(12),
                 ),
-                color: Colors.white,
+                color: Colors.white70,
               ),
               child: Column(
                 children: [
@@ -105,7 +105,7 @@ class ActiveOrderPage extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        "Abdullajanov Murod",
+                        "Abdullatif Murad",
                         style: ThemeTextStyles.adress,
                       ),
                     ],

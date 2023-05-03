@@ -45,7 +45,8 @@ class ThemeTextStyles {
     fontSize: 15,
     fontWeight: FontWeight.w400,
     color: ThemeColors.black3,
-  );static const TextStyle setting = TextStyle(
+  );
+  static const TextStyle setting = TextStyle(
     fontSize: 15,
     fontWeight: FontWeight.w500,
     color: Colors.black,
@@ -68,8 +69,5 @@ class ThemeTextStyles {
     color: Colors.black,
   );
   static const TextStyle list_text = TextStyle(
-    fontSize: 13,
-    fontWeight: FontWeight.w400,
-    color: ThemeColors.black3
-  );
+      fontSize: 13, fontWeight: FontWeight.w400, color: ThemeColors.black3);
 }

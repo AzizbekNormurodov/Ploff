@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../routes/app_routes.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -38,7 +37,6 @@ class _SplashPageState extends State<SplashPage> {
               image: AssetImage('assets/png/logo.png'),
             ),
           ),
-          SpinKitWave(color: Colors.black12),
         ],
       ),
     );

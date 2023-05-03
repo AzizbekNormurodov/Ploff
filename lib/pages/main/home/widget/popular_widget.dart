@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 import 'package:ploff/pages/main/home/widget/discount_widget.dart';
 
@@ -13,7 +12,7 @@ class PopularWidget extends StatelessWidget {
         width: double.infinity,
         height: 407,
         decoration: const BoxDecoration(
-          color: Colors.white,
+          color: Colors.white70,
           borderRadius: BorderRadius.all(
             Radius.circular(12),
           ),
@@ -21,7 +20,8 @@ class PopularWidget extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.only(left: 16),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               const Padding(
                 padding: EdgeInsets.only(top: 16),
@@ -30,9 +30,12 @@ class PopularWidget extends StatelessWidget {
                   style: ThemeTextStyles.text2,
                 ),
               ),
-              ContainerWidget(text: "35 000 сум", image: "assets/png/ploff5.png"),
-              ContainerWidget(text: "38 000 сум", image: "assets/png/ploff6.png"),
-              ContainerWidget(text: "42 000 сум", image: "assets/png/ploff7.png"),
+              ContainerWidget(
+                  text: "35 000 сум", image: "assets/png/ploff5.png"),
+              ContainerWidget(
+                  text: "38 000 сум", image: "assets/png/ploff6.png"),
+              ContainerWidget(
+                  text: "42 000 сум", image: "assets/png/ploff7.png"),
             ],
           ),
         ),
@@ -40,4 +43,3 @@ class PopularWidget extends StatelessWidget {
     );
   }
 }
-

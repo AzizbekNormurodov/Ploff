@@ -66,7 +66,7 @@ class _OrderWidgetState extends State<OrderWidget> {
             borderRadius: BorderRadius.all(
               Radius.circular(12),
             ),
-            color: Colors.white,
+            color: Colors.white70,
           ),
           child: Column(
             children: [
@@ -104,7 +104,7 @@ class _OrderWidgetState extends State<OrderWidget> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text("85 000 сум",
+                    const Text("86 000 сум",
                         style: TextStyle(
                           fontSize: 17,
                           fontWeight: FontWeight.w600,
@@ -113,7 +113,7 @@ class _OrderWidgetState extends State<OrderWidget> {
                     Row(
                       children: const [
                         Icon(
-                          Icons.calendar_today_outlined,
+                          Icons.calendar_month_rounded,
                           color: ThemeColors.black3,
                         ),
                         Text(

@@ -37,7 +37,10 @@ class _NearestBranchWidgetState extends State<NearestBranchWidget> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 16, right: 16,),
+              padding: const EdgeInsets.only(
+                left: 16,
+                right: 16,
+              ),
               child: Image.asset(
                 "assets/png/map.png",
                 height: 156,
@@ -50,9 +53,13 @@ class _NearestBranchWidgetState extends State<NearestBranchWidget> {
                 style: ThemeTextStyles.appTitle,
               ),
             ),
-            SizedBox( height: 60,
+            SizedBox(
+              height: 60,
               child: ListTile(
-                subtitle: const Text("SТашкент, 100000, Узбекистан", style: ThemeTextStyles.adress,),
+                subtitle: const Text(
+                  "SТашкент, 100000, Узбекистан",
+                  style: ThemeTextStyles.adress,
+                ),
                 leading: Image.asset("assets/png/restaurant.png"),
                 title: const Text('Samarqand Darvoza'),
                 trailing: Radio(
@@ -67,8 +74,13 @@ class _NearestBranchWidgetState extends State<NearestBranchWidget> {
                 ),
               ),
             ),
-            SizedBox( height: 60,
-              child: ListTile( subtitle: const Text("SТашкент, 100000, Узбекистан", style: ThemeTextStyles.adress,),
+            SizedBox(
+              height: 60,
+              child: ListTile(
+                subtitle: const Text(
+                  "SТашкент, 100000, Узбекистан",
+                  style: ThemeTextStyles.adress,
+                ),
                 leading: Image.asset("assets/png/restaurant.png"),
                 title: const Text('Sebzor'),
                 trailing: Radio(
