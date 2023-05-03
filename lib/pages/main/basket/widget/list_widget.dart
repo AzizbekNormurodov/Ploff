@@ -10,7 +10,7 @@ class ListWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 16),
       child: Container(
-        color: Colors.white,
+        color: Colors.white70,
         child: Column(
           children: [
             SizedBox(
@@ -154,7 +154,6 @@ class ListWidget extends StatelessWidget {
                         Icon(Icons.clear),
                         Padding(
                           padding: EdgeInsets.only(left: 32),
-                          child: CounterWidget(),
                         ),
                       ],
                     ),
