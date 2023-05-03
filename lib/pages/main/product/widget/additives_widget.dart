@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
+import 'package:ploff/core/widget/counter_widget.dart';
 
 class AdditivesToWidget extends StatefulWidget {
   const  AdditivesToWidget({Key? key}) : super(key: key);
@@ -147,9 +148,9 @@ class _GroupWidgetState extends State<GroupWidget> {
                 });
               },
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 16, bottom: 16,),
-              child: Image.asset("assets/png/plus.png", width: 96, height: 40,),
+            const Padding(
+              padding: EdgeInsets.only(left: 16),
+              child: CounterWidget(),
             ),
             RadioListTile(
               contentPadding: const EdgeInsets.symmetric(horizontal: 8),

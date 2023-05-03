@@ -46,7 +46,7 @@ class AppPages {
     AppRoutes.settings: (context) => SettingsPage(),
     AppRoutes.yunusobod_filial: (context) {
       var arg=ModalRoute.of(context)!.settings.arguments as ArgObject;
-      return  YunusobodFilialPage(title: arg.title, image: arg.image,);
+      return  YunusobodFilialPage(title: arg.title,);
     },
     AppRoutes.adress: (context) => AdressPage(),
 

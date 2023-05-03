@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 
 class AddressWidget extends StatelessWidget {
@@ -33,21 +34,17 @@ class AddressWidget extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16, right: 16, bottom: 8),
-            child: Container(
-              height: 48,
-              width: double.infinity,
-              decoration: const BoxDecoration(
-                color: Color(0xffF5F5F5),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(8),
-                ),
-              ),
-              child: const Padding(
-                padding: EdgeInsets.only(left: 16, top: 12, bottom: 12),
-                child: Text(
-                  "Бешкайрагач 12",
-                ),
-              ),
+            child: TextFormField(
+              style: ThemeTextStyles.inputname,
+              decoration: const InputDecoration(
+                  hintText: 'Бешкайрагач 12',
+                  hintStyle: TextStyle(color: ThemeColors.black1),
+                  fillColor: Color(0xffF5F5F5),
+                  labelStyle: TextStyle(fontSize: 10, color: Colors.black),
+                  border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  )),
+              // controller: cpfcontroller,
             ),
           ),
           Padding(
@@ -55,69 +52,51 @@ class AddressWidget extends StatelessWidget {
             child: Row(
               children: [
                 Expanded(
-                  child: Container(
-                    height: 48,
-                    width: 109,
-                    decoration: const BoxDecoration(
-                      color: Color(0xffF5F5F5),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8),
-                      ),
-                    ),
-                    child: const Padding(
-                      padding:
-                      EdgeInsets.only(left: 16, top: 12, bottom: 12),
-                      child: Text(
-                        "Подъезд",
-                        style: ThemeTextStyles.adress,
-                      ),
-                    ),
+                  child: TextFormField(
+                    style: ThemeTextStyles.inputname,
+                    decoration: const InputDecoration(
+                        hintText: 'Подъезд',
+                        hintStyle: ThemeTextStyles.adress,
+                        fillColor: Color(0xffF5F5F5),
+                        labelStyle: TextStyle(fontSize: 10, color: Colors.black),
+                        border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                          borderRadius: BorderRadius.all(Radius.circular(8)),
+                        )),
+                    // controller: cpfcontroller,
                   ),
                 ),
                 const SizedBox(
                   width: 8,
                 ),
                 Expanded(
-                  child: Container(
-                    height: 48,
-                    width: 109,
-                    decoration: const BoxDecoration(
-                      color: Color(0xffF5F5F5),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8),
-                      ),
-                    ),
-                    child: const Padding(
-                      padding:
-                      EdgeInsets.only(left: 16, top: 12, bottom: 12),
-                      child: Text(
-                        "Этаж",
-                        style: ThemeTextStyles.adress,
-                      ),
-                    ),
+                  child: TextFormField(
+                    style: ThemeTextStyles.inputname,
+                    decoration: const InputDecoration(
+                        hintText: 'Этаж',
+                        hintStyle: ThemeTextStyles.adress,
+                        fillColor: Color(0xffF5F5F5),
+                        labelStyle: TextStyle(fontSize: 10, color: Colors.black),
+                        border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                          borderRadius: BorderRadius.all(Radius.circular(8)),
+                        )),
+                    // controller: cpfcontroller,
                   ),
                 ),
                 const SizedBox(
                   width: 8,
                 ),
                 Expanded(
-                  child: Container(
-                    height: 48,
-                    width: 109,
-                    decoration: const BoxDecoration(
-                      color: Color(0xffF5F5F5),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8),
-                      ),
-                    ),
-                    child: const Padding(
-                      padding:
-                      EdgeInsets.only(left: 16, top: 12, bottom: 12),
-                      child: Text(
-                        "Квартира",
-                        style: ThemeTextStyles.adress,
-                      ),
-                    ),
+                  child: TextFormField(
+                    style: ThemeTextStyles.inputname,
+                    decoration: const InputDecoration(
+                        hintText: 'Квартира',
+                        hintStyle: ThemeTextStyles.adress,
+                        fillColor: Color(0xffF5F5F5),
+                        labelStyle: TextStyle(fontSize: 10, color: Colors.black),
+                        border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                          borderRadius: BorderRadius.all(Radius.circular(8)),
+                        )),
+                    // controller: cpfcontroller,
                   ),
                 ),
               ],
@@ -133,21 +112,17 @@ class AddressWidget extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16, right: 16, bottom: 8),
-            child: Container(
-              height: 48,
-              width: double.infinity,
-              decoration: const BoxDecoration(
-                color: Color(0xffF5F5F5),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(8),
-                ),
-              ),
-              child: const Padding(
-                padding: EdgeInsets.only(left: 16, top: 12, bottom: 12),
-                child: Text(
-                  "Бешкайрагач 12",
-                ),
-              ),
+            child: TextFormField(
+              style: ThemeTextStyles.inputname,
+              decoration: const InputDecoration(
+                  hintText: 'Бешкайрагач 12',
+                  hintStyle: TextStyle(color: ThemeColors.black1),
+                  fillColor: Color(0xffF5F5F5),
+                  labelStyle: TextStyle(fontSize: 10, color: Colors.black),
+                  border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  )),
+              // controller: cpfcontroller,
             ),
           ),
         ],

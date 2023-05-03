@@ -114,11 +114,12 @@ class HistoryOrderPage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 12),
             child: Image.asset("assets/png/chek.png"),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
-            child: ElevatedButton(onPressed: (){}, child: const Text("Повторить заказ")),
-          ),
+
         ],
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
+        child: ElevatedButton(onPressed: (){}, child: const Text("Повторить заказ")),
       ),
     );
   }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 import 'package:ploff/pages/main/basket/widget/basket_widget.dart';
 import 'package:ploff/pages/main/basket/widget/button_widget.dart';
+import 'package:ploff/pages/main/basket/widget/list_widget.dart';
 import 'package:ploff/routes/app_routes.dart';
 
 class BasketPage extends StatelessWidget {
@@ -25,19 +26,7 @@ class BasketPage extends StatelessWidget {
         scrollDirection: Axis.vertical,
         slivers: [
           SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.only(top: 16),
-              child: Image.asset("assets/png/card.png"),
-            ),
-          ),
-          SliverToBoxAdapter(
-            child: Image.asset("assets/png/card_ploff.png"),
-          ),
-          SliverToBoxAdapter(
-            child: Image.asset("assets/png/card_ploff2.png"),
-          ),
-          SliverToBoxAdapter(
-            child: Image.asset("assets/png/Frame.png"),
+            child: ListWidget(),
           ),
           SliverToBoxAdapter(
             child: Padding(

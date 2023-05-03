@@ -3,14 +3,14 @@ import 'package:ploff/core/theme/theme_text_styles.dart';
 import 'package:ploff/routes/app_routes.dart';
 
 class ArgObject{
-  final String title;
-  final String image;
-  ArgObject({required this.image,required this.title});
-
+   String title;
+  ArgObject({required this.title});
 }
 class FilialPage extends StatelessWidget {
    FilialPage({Key? key}) : super(key: key);
-  var arg=ArgObject(image: "assets/png/yunusobod.png", title: 'Юнусабад');
+  var arg=ArgObject(title: 'Юнусабад');
+  var arg1=ArgObject( title: 'Хадра');
+  var arg2=ArgObject( title: 'Юнусабад');
 
   @override
   Widget build(BuildContext context) {
@@ -26,14 +26,14 @@ class FilialPage extends StatelessWidget {
           ),
           child: Column(
             children: [
-              FilialItem(icon: arg.image, text: arg.title, text2: "Абдуллы Кадыри, 10", onTap: (){
+              FilialItem(icon: "assets/png/yunusobod.png", text: arg.title, text2: "Абдуллы Кадыри, 10", onTap: (){
                 Navigator.pushNamed(context, AppRoutes.yunusobod_filial,arguments: arg);
               }),
-              FilialItem(icon: "assets/png/xadra.png", text: "Хадра", text2: "Абдуллы Кадыри, 42B", onTap: (){
-                Navigator.pushNamed(context, AppRoutes.yunusobod_filial);
+              FilialItem(icon: "assets/png/xadra.png", text: arg1.title, text2: "Абдуллы Кадыри, 42B", onTap: (){
+                Navigator.pushNamed(context, AppRoutes.yunusobod_filial, arguments: arg1);
               }),
-              FilialItem(icon: "assets/png/yunusobod2.png", text: "Юнусабад", text2: "Абдуллы Кадыри, 42B", onTap: (){
-                Navigator.pushNamed(context, AppRoutes.yunusobod_filial);
+              FilialItem(icon: "assets/png/yunusobod2.png", text: arg2.title, text2: "Абдуллы Кадыри, 42B", onTap: (){
+                Navigator.pushNamed(context, AppRoutes.yunusobod_filial, arguments: arg2);
               }),
 
             ],

@@ -3,9 +3,9 @@ import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 
 class YunusobodFilialPage extends StatefulWidget {
-   YunusobodFilialPage({Key? key,required this.title, required this.image}) : super(key: key);
+   YunusobodFilialPage({Key? key,required this.title}) : super(key: key);
 String title;
-String image;
+
   @override
   State<YunusobodFilialPage> createState() => _YunusobodFilialPageState();
 }
@@ -34,8 +34,7 @@ class _YunusobodFilialPageState extends State<YunusobodFilialPage> {
             children: [
               Padding(
                 padding: const EdgeInsets.all(16),
-                child: Image.asset(
-                  widget.image,
+                child: Image.asset("assets/png/yunusobod1.png",
                   width: double.infinity,
                   height: 180,
                   fit: BoxFit.fill,

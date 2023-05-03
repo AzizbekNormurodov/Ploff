@@ -37,7 +37,7 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
             padding: const EdgeInsets.only(left: 16, right: 16, bottom: 8),
             child: TextFormField(
               style: ThemeTextStyles.inputname,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   hintText: 'Бешкайрагач 12',
                   hintStyle: TextStyle(color: ThemeColors.black1),
                   fillColor: Color(0xffF5F5F5),
@@ -56,7 +56,7 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
                 Expanded(
                   child: TextFormField(
                     style: ThemeTextStyles.inputname,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: 'Подъезд',
                         hintStyle: ThemeTextStyles.adress,
                         fillColor: Color(0xffF5F5F5),
@@ -74,7 +74,7 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
                 Expanded(
                   child: TextFormField(
                     style: ThemeTextStyles.inputname,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: 'Этаж',
                         hintStyle: ThemeTextStyles.adress,
                         fillColor: Color(0xffF5F5F5),
@@ -91,7 +91,7 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
                 Expanded(
                   child: TextFormField(
                     style: ThemeTextStyles.inputname,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: 'Квартира',
                         hintStyle: ThemeTextStyles.adress,
                         fillColor: Color(0xffF5F5F5),
@@ -110,7 +110,7 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
                 const EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
             child: TextFormField(
               style: ThemeTextStyles.inputname,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   hintText: 'Ориентир',
                   hintStyle: ThemeTextStyles.adress,
                   fillColor: Color(0xffF5F5F5),
@@ -125,7 +125,7 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
             padding: const EdgeInsets.only(left: 16, right: 16),
             child:TextFormField(
               style: ThemeTextStyles.inputname,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   hintText: 'Название адреса',
                   hintStyle: ThemeTextStyles.adress,
                   fillColor: Color(0xffF5F5F5),

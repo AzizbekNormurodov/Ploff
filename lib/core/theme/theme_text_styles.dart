@@ -51,9 +51,9 @@ class ThemeTextStyles {
     color: Colors.black,
   );
   static const TextStyle name = TextStyle(
-    fontSize: 14,
-    fontWeight: FontWeight.w400,
-    color: Color(0xff818C99),
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+    color: ThemeColors.black2,
   );
   static const TextStyle inputname = TextStyle(
     fontSize: 14,
@@ -67,9 +67,9 @@ class ThemeTextStyles {
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
-  static const TextStyle restaurant_text = TextStyle(
+  static const TextStyle list_text = TextStyle(
     fontSize: 13,
     fontWeight: FontWeight.w400,
-    color: Color(0xff303940),
+    color: ThemeColors.black3
   );
 }
