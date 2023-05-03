@@ -79,12 +79,12 @@ class _HomePageState extends State<HomePage> {
                                 },
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.all(
+                                    borderRadius: const BorderRadius.all(
                                       Radius.circular(8),
                                     ),
                                     color: isSelected == index
                                         ? ThemeColors.primary
-                                        : Color(0xffF5F5F5),
+                                        : const Color(0xffF5F5F5),
                                   ),
                                   child: Padding(
                                     padding: const EdgeInsets.only(

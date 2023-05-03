@@ -52,7 +52,7 @@ class _NearestBranchWidgetState extends State<NearestBranchWidget> {
             ),
             SizedBox( height: 60,
               child: ListTile(
-                subtitle: Text("SТашкент, 100000, Узбекистан", style: ThemeTextStyles.adress,),
+                subtitle: const Text("SТашкент, 100000, Узбекистан", style: ThemeTextStyles.adress,),
                 leading: Image.asset("assets/png/restaurant.png"),
                 title: const Text('Samarqand Darvoza'),
                 trailing: Radio(
@@ -68,7 +68,7 @@ class _NearestBranchWidgetState extends State<NearestBranchWidget> {
               ),
             ),
             SizedBox( height: 60,
-              child: ListTile( subtitle: Text("SТашкент, 100000, Узбекистан", style: ThemeTextStyles.adress,),
+              child: ListTile( subtitle: const Text("SТашкент, 100000, Узбекистан", style: ThemeTextStyles.adress,),
                 leading: Image.asset("assets/png/restaurant.png"),
                 title: const Text('Sebzor'),
                 trailing: Radio(

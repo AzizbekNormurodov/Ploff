@@ -27,28 +27,28 @@ class AppPages {
 
   static final Map<String, WidgetBuilder> routes = {
     AppRoutes.initial: (context) => const SplashPage(),
-    AppRoutes.signup: (context) => SignUpPage(),
-    AppRoutes.main: (context) =>  MainPage(),
+    AppRoutes.signup: (context) => const SignUpPage(),
+    AppRoutes.main: (context) =>  const MainPage(),
     AppRoutes.details: (context) =>  DetailsPage(),
-    AppRoutes.pincode: (context) =>  PinCodePage(),
-    AppRoutes.language: (context) => LanguagePage(),
-    AppRoutes.product: (context) => ProductPage(),
-    AppRoutes.basket_empty: (context) => BasketEmptyPage(),
-    AppRoutes.basket: (context) => BasketPage(),
+    AppRoutes.pincode: (context) =>  const PinCodePage(),
+    AppRoutes.language: (context) => const LanguagePage(),
+    AppRoutes.product: (context) => const ProductPage(),
+    AppRoutes.basket_empty: (context) => const BasketEmptyPage(),
+    AppRoutes.basket: (context) => const BasketPage(),
     AppRoutes.checkout: (context) => CheckoutPage(),
-    AppRoutes.profile: (context) => ProfilePage(),
-    AppRoutes.active_order: (context) => ActiveOrderPage(),
-    AppRoutes.history_order: (context) => HistoryOrderPage(),
-    AppRoutes.about_service: (context) => AboutServicePage(),
-    AppRoutes.edit_profile: (context) => EditProfilePage(),
+    AppRoutes.profile: (context) => const ProfilePage(),
+    AppRoutes.active_order: (context) => const ActiveOrderPage(),
+    AppRoutes.history_order: (context) => const HistoryOrderPage(),
+    AppRoutes.about_service: (context) => const AboutServicePage(),
+    AppRoutes.edit_profile: (context) => const EditProfilePage(),
     AppRoutes.filial: (context) => FilialPage(),
-    AppRoutes.my_adress: (context) => MyAdressPage(),
-    AppRoutes.settings: (context) => SettingsPage(),
+    AppRoutes.my_adress: (context) => const MyAdressPage(),
+    AppRoutes.settings: (context) => const SettingsPage(),
     AppRoutes.yunusobod_filial: (context) {
       var arg=ModalRoute.of(context)!.settings.arguments as ArgObject;
       return  YunusobodFilialPage(title: arg.title,);
     },
-    AppRoutes.adress: (context) => AdressPage(),
+    AppRoutes.adress: (context) => const AdressPage(),
 
 
 

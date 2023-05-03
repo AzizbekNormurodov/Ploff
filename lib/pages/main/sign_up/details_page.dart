@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/widgets.dart';
 import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/routes/app_routes.dart';
 import '../../../core/theme/theme_text_styles.dart';
@@ -105,7 +103,7 @@ class _DetailsPageState extends State<DetailsPage> {
           onPressed: () {
             Navigator.pushNamed(context, AppRoutes.main);
           },
-          child: Text("Continue"),
+          child: const Text("Continue"),
         ),
       ),
 

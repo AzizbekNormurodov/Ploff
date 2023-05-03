@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../core/theme/theme_colors.dart';
 import '../../routes/app_routes.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 

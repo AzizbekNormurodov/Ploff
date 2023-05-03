@@ -12,7 +12,7 @@ class ListWidget extends StatelessWidget {
       child: Container( color: Colors.white,
         child: Column(
           children: [
-            Container(
+            SizedBox(
               width: double.infinity,
               height: 157,
               child: Padding(
@@ -23,20 +23,20 @@ class ListWidget extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Column( crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text("Чайханский плов", style: ThemeTextStyles.appTitle,),
                           Text("Без лука", style: ThemeTextStyles.list_text,),
                           Text("Без Яйцо", style: ThemeTextStyles.list_text,),
                           Text("Без Салат", style: ThemeTextStyles.list_text,),
                           Padding(
-                            padding: const EdgeInsets.only(top: 10),
+                            padding: EdgeInsets.only(top: 10),
                             child: Text("47 000 сум", style: ThemeTextStyles.setting,),
                           ),
                         ],
                       ),
                     ),
                     Column( mainAxisAlignment: MainAxisAlignment.spaceBetween, crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
+                      children: const [
                         Icon(Icons.clear),
                         CounterWidget(),
                       ],
@@ -47,7 +47,7 @@ class ListWidget extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
+            SizedBox(
               width: double.infinity,
               height: 120,
               child: Padding(
@@ -58,25 +58,25 @@ class ListWidget extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Column( crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text("Свадебный плов", style: ThemeTextStyles.appTitle,),
                           Text("0,7 порция", style: ThemeTextStyles.list_text,),
 
                           Padding(
-                            padding: const EdgeInsets.only(top: 10),
+                            padding: EdgeInsets.only(top: 10),
                             child: Text("47 000 сум", style: ThemeTextStyles.setting,),
                           ),
                         ],
                       ),
                     ),
                     Column( mainAxisAlignment: MainAxisAlignment.spaceBetween, crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
+                      children: const [
                         Padding(
-                          padding: const EdgeInsets.only(right: 4),
+                          padding: EdgeInsets.only(right: 4),
                           child: Icon(Icons.clear),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 6),
+                          padding: EdgeInsets.only(left: 6),
                           child: CounterWidget(),
                         ),
                       ],
@@ -87,7 +87,7 @@ class ListWidget extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
+            SizedBox(
               width: double.infinity,
               height: 120,
               child: Padding(
@@ -98,22 +98,22 @@ class ListWidget extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Column( crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text("Особый плов", style: ThemeTextStyles.appTitle,),
                           Text("1 порция", style: ThemeTextStyles.list_text,),
 
                           Padding(
-                            padding: const EdgeInsets.only(top: 10),
+                            padding: EdgeInsets.only(top: 10),
                             child: Text("47 000 сум", style: ThemeTextStyles.setting,),
                           ),
                         ],
                       ),
                     ),
                     Column( mainAxisAlignment: MainAxisAlignment.spaceBetween, crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
+                      children: const [
                         Icon(Icons.clear),
                         Padding(
-                          padding: const EdgeInsets.only(left: 32),
+                          padding: EdgeInsets.only(left: 32),
                           child: CounterWidget(),
                         ),
                       ],
@@ -128,7 +128,7 @@ class ListWidget extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.only(left: 16, right: 16),
                 child: Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("Общая сумма", style: ThemeTextStyles.name,),
+                  children: const [Text("Общая сумма", style: ThemeTextStyles.name,),
                   Text("58 000 сум", style: ThemeTextStyles.appTitle,),
                   ],
                 ),

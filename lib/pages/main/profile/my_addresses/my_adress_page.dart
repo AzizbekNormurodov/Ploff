@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
 import 'package:ploff/routes/app_routes.dart';
 
-import '../settings/widget/language_widget.dart';
 
 class MyAdressPage extends StatelessWidget {
   const MyAdressPage({Key? key}) : super(key: key);

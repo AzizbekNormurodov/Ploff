@@ -12,21 +12,21 @@ class HistoryOrderWidget extends StatelessWidget {
       children: [
         OrderWidget(
           text: "Заказ №341",
-          color: Color.fromRGBO(34, 195, 72, 0.1),
+          color: const Color.fromRGBO(34, 195, 72, 0.1),
           title: "Доставлен",
-          titlecolor: Color(0xff22C348),
+          titlecolor: const Color(0xff22C348),
         ),
         OrderWidget(
           text: "Заказ №124",
-          color: Color(0xffFFE8E7),
+          color: const Color(0xffFFE8E7),
           title: "Отменён",
-          titlecolor: Color(0xffF30404),
+          titlecolor: const Color(0xffF30404),
         ),
         OrderWidget(
           text: "Заказ №152",
-          color: Color.fromRGBO(34, 195, 72, 0.1),
+          color: const Color.fromRGBO(34, 195, 72, 0.1),
           title: "Доставлен",
-          titlecolor: Color(0xff22C348),
+          titlecolor: const Color(0xff22C348),
         ),
       ],
     );

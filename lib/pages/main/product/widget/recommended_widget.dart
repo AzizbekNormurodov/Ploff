@@ -29,7 +29,7 @@ class _RecommendedWidgetState extends State<RecommendedWidget> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16, right: 16),
-            child: Container(
+            child: SizedBox(
               width: 460,
               height: 224,
               child: ListView(
@@ -72,7 +72,7 @@ class RecommendedItem extends StatelessWidget {
       child: Container(
         width: 148,
         height: 224,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(
             Radius.circular(8),
           ),
@@ -98,7 +98,7 @@ class RecommendedItem extends StatelessWidget {
               child: ElevatedButton(
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.white),
-                    minimumSize: MaterialStateProperty.all(Size(132, 36))),
+                    minimumSize: MaterialStateProperty.all(const Size(132, 36))),
                 onPressed: () {},
                 child: Text(cost),
               ),

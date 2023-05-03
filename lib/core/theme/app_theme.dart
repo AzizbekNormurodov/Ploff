@@ -71,7 +71,7 @@ final lightTheme = ThemeData(
         ),
       ),
     ),
-    inputDecorationTheme:  InputDecorationTheme(
+    inputDecorationTheme:  const InputDecorationTheme(
       filled: true,
       fillColor: ThemeColors.backgroundColor,
       contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),

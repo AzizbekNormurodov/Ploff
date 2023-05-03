@@ -88,7 +88,7 @@ class EditProfilePage extends StatelessWidget {
                         backgroundColor: Colors.white,
                         context: context,
                         builder: (_) {
-                          return DateWidget(
+                          return const DateWidget(
                               text: "Дата рождения", mode: CupertinoDatePickerMode.date);
                         });
                   },

@@ -17,7 +17,7 @@ class LanguagePage extends StatelessWidget {
               padding: const EdgeInsets.only( top: 110, right: 210, bottom: 48,),
               child: Image.asset("assets/png/status.png", width: 148, height: 132,),
             ),
-            Text("Выберите язык:", style: ThemeTextStyles.order,),
+            const Text("Выберите язык:", style: ThemeTextStyles.order,),
             LanguageWidget(image: "assets/png/uz.png", text: "O`zbekcha"),
             LanguageWidget(image: "assets/png/ru.png", text: "Русский"),
             LanguageWidget(image: "assets/png/en.png", text: "English"),
@@ -37,7 +37,7 @@ class LanguageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 16),
-      child: ListTile( tileColor: Color(0xffF2F2F2), shape: RoundedRectangleBorder(
+      child: ListTile( tileColor: const Color(0xffF2F2F2), shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
         leading: Image.asset(image),

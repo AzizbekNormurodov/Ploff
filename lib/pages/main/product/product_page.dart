@@ -22,7 +22,7 @@ class _ProductPageState extends State<ProductPage> {
         scrollDirection: Axis.vertical,
         slivers: [
           SliverToBoxAdapter(
-            child: Container(
+            child: SizedBox(
               height: 400,
               width: double.infinity,
               child: Stack(
