@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
+import 'package:ploff/pages/main/my_orders/widget/cheque_widget.dart';
 
 class ActiveOrderPage extends StatelessWidget {
   const ActiveOrderPage({Key? key}) : super(key: key);
@@ -115,10 +116,7 @@ class ActiveOrderPage extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 12),
-            child: Image.asset("assets/png/chek.png"),
-          ),
+          ChequeWidget(),
         ],
       ),
     );

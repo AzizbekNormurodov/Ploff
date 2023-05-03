@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
         FocusManager.instance.primaryFocus?.unfocus();
       },
       child: MaterialApp( debugShowCheckedModeBanner: false,
-        title: 'EasyToTravel',
         theme: lightTheme,
         initialRoute: AppRoutes.initial,
         routes: AppPages.routes,
