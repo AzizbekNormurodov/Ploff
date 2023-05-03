@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
+import 'package:ploff/pages/main/my_orders/widget/cheque_widget.dart';
 import 'package:ploff/pages/main/product/widget/nearest_branch_widget.dart';
 import 'package:ploff/routes/app_routes.dart';
 
@@ -96,7 +97,7 @@ class _CheckoutPageState extends State<CheckoutPage>
                     const CourierWidget(),
                     const DeliveryTimeWidget(),
                     const PaymentTypeWidget(),
-                    Image.asset("assets/png/chek.png"),
+                    ChequeWidget(),
                     Padding(
                       padding: const EdgeInsets.all(16),
                       child: ElevatedButton(
@@ -123,7 +124,7 @@ class _CheckoutPageState extends State<CheckoutPage>
                       child: NearestBranchWidget(),
                     ),
                     const PaymentTypeWidget(),
-                    Image.asset("assets/png/chek.png"),
+                    ChequeWidget(),
                     Padding(
                       padding: const EdgeInsets.all(16),
                       child: ElevatedButton(
