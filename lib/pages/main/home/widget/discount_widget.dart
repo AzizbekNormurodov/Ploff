@@ -13,7 +13,7 @@ class DiscountWidget extends StatelessWidget {
         padding: const EdgeInsets.only(top: 12, bottom: 12),
         child: Container(
           width: double.infinity,
-          height: 527,
+          height: 529,
           decoration: const BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.all(
@@ -95,7 +95,7 @@ class ContainerWidget extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: Image.asset(
                     image,
-                    width: 86,
+                    width: 56,
                     height: 86,
                   ),
                 ),

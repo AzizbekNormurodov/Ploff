@@ -15,9 +15,9 @@ class ListWidget extends StatelessWidget {
           children: [
             SizedBox(
               width: double.infinity,
-              height: 157,
+              height: 155,
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.only(left: 16, bottom: 16, top: 16),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -69,7 +69,7 @@ class ListWidget extends StatelessWidget {
               width: double.infinity,
               height: 120,
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -154,6 +154,7 @@ class ListWidget extends StatelessWidget {
                         Icon(Icons.clear),
                         Padding(
                           padding: EdgeInsets.only(left: 32),
+                          child: CounterWidget(),
                         ),
                       ],
                     ),

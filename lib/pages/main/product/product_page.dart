@@ -39,7 +39,7 @@ class _ProductPageState extends State<ProductPage> {
                     right: 0,
                     child: Container(
                       width: double.infinity,
-                      height: 168,
+                      height: 202,
                       decoration: const BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.all(
@@ -79,20 +79,23 @@ class _ProductPageState extends State<ProductPage> {
       ),
       bottomNavigationBar: Container(
         color: Colors.white,
-        height: 132,
+        height: 140,
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  CounterWidget(),
-                  Text(
-                    "47 000 сум",
-                    style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.only(bottom: 5),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    CounterWidget(),
+                    Text(
+                      "47 000 сум",
+                      style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
+                    ),
+                  ],
+                ),
               ),
               ElevatedButton(
                 onPressed: () {

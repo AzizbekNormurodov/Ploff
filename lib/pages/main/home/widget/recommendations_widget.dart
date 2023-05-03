@@ -12,7 +12,7 @@ class RecommendationsWidget extends StatelessWidget {
         padding: const EdgeInsets.only(top: 16),
         child: Container(
           width: double.infinity,
-          height: 287,
+          height: 289,
           decoration: const BoxDecoration(
             color: Colors.white70,
             borderRadius: BorderRadius.all(

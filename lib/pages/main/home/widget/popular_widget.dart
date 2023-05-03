@@ -10,7 +10,7 @@ class PopularWidget extends StatelessWidget {
     return SliverToBoxAdapter(
       child: Container(
         width: double.infinity,
-        height: 407,
+        height: 409,
         decoration: const BoxDecoration(
           color: Colors.white70,
           borderRadius: BorderRadius.all(

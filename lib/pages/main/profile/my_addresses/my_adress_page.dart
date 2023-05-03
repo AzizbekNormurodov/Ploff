@@ -25,7 +25,7 @@ class MyAdressPage extends StatelessWidget {
               padding: const EdgeInsets.only(top: 16),
               child: Container(
                 width: double.infinity,
-                height: 64,
+                height: 67,
                 decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(12))),
@@ -72,7 +72,7 @@ class MyAdressPage extends StatelessWidget {
             },
             child: Container(
               width: double.infinity,
-              height: 64,
+              height: 67,
               decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(12))),

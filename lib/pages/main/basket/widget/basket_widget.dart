@@ -70,7 +70,7 @@ class BasketItem extends StatelessWidget {
       ),
       child: Container(
         width: 120,
-        height: 182,
+        height: 184,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(
             Radius.circular(6),
@@ -87,7 +87,7 @@ class BasketItem extends StatelessWidget {
               fit: BoxFit.cover,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 8, bottom: 4, top: 7),
+              padding: const EdgeInsets.only(left: 8, bottom: 4, top: 5),
               child: Text(
                 text,
                 style: ThemeTextStyles.name,
@@ -101,7 +101,7 @@ class BasketItem extends StatelessWidget {
                     minimumSize:
                         MaterialStateProperty.all(const Size(104, 32))),
                 onPressed: () {},
-                child: Text(cost),
+                child: Text(cost, style: TextStyle(fontSize: 13),),
               ),
             ),
           ],

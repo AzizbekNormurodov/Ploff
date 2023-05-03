@@ -18,7 +18,7 @@ class ButtonWidget extends StatelessWidget {
               context: context,
               builder: (context) {
                 return Theme(
-                  data: ThemeData(backgroundColor: Colors.white),
+                  data: ThemeData(backgroundColor: Colors.white70),
                   child: AlertDialog(
                     title: const Text(
                       textAlign: TextAlign.center,
