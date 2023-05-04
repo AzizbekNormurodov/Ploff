@@ -58,7 +58,8 @@ final lightTheme = ThemeData(
           ),
         ),
         textStyle: MaterialStatePropertyAll(
-          TextStyle( color: Colors.black,
+          TextStyle(
+            color: Colors.black,
             fontSize: 15,
             fontWeight: FontWeight.w600,
           ),
@@ -71,18 +72,20 @@ final lightTheme = ThemeData(
         ),
       ),
     ),
-    inputDecorationTheme:  const InputDecorationTheme(
+    inputDecorationTheme: const InputDecorationTheme(
       filled: true,
       fillColor: ThemeColors.backgroundColor,
       contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      border: OutlineInputBorder( borderSide: BorderSide.none,
+      border: OutlineInputBorder(
+        borderSide: BorderSide.none,
         borderRadius: BorderRadius.all(Radius.circular(8)),
         // borderSide: BorderSide(
         //   color: Colors.transparent,
         //   width: 1,
         // ),
       ),
-      enabledBorder: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(width: 0.0),
         borderRadius: BorderRadius.all(Radius.circular(8)),
         // borderSide: BorderSide(
         //   color: Colors.transparent,

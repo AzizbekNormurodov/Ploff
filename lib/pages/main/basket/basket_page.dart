@@ -18,14 +18,14 @@ class BasketPage extends StatelessWidget {
         ),
         automaticallyImplyLeading: false,
         centerTitle: true,
-        actions: [
-          const ButtonWidget(),
+        actions: const [
+          ButtonWidget(),
         ],
       ),
       body: CustomScrollView(
         scrollDirection: Axis.vertical,
         slivers: [
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(
             child: ListWidget(),
           ),
           SliverToBoxAdapter(
@@ -41,18 +41,27 @@ class BasketPage extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 16, right: 16, top: 16,),
-                  child: Column( crossAxisAlignment: CrossAxisAlignment.start,
+                  padding: const EdgeInsets.only(
+                    left: 16,
+                    right: 16,
+                    top: 16,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text("Комментарий", style: ThemeTextStyles.order2),
                       const SizedBox(height: 10),
-                      SizedBox( height: 48,
-                        child: TextField( textAlign: TextAlign.start,
-                          decoration: InputDecoration(counterStyle: const TextStyle(color: Colors.green),
+                      SizedBox(
+                        height: 48,
+                        child: TextField(
+                          textAlign: TextAlign.start,
+                          decoration: InputDecoration(
+                            counterStyle: const TextStyle(color: Colors.green),
                             hintText: 'Напишите комментарий к заказу',
                             hintStyle: ThemeTextStyles.adress,
                             fillColor: const Color(0xffF5F5F5),
-                            enabledBorder: OutlineInputBorder( borderSide: const BorderSide(width:0.0),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide: const BorderSide(width: 0.0),
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
@@ -72,7 +81,7 @@ class BasketPage extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             Navigator.pushNamed(context, AppRoutes.checkout);
-            },
+          },
           child: const Text("Оформить заказ"),
         ),
       ),

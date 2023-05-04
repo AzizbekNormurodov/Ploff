@@ -3,7 +3,6 @@ import 'package:flutter_pin_code_widget/flutter_pin_code_widget.dart';
 
 import '../../../routes/app_routes.dart';
 
-
 class PinCodePage extends StatefulWidget {
   const PinCodePage({Key? key}) : super(key: key);
 
@@ -14,7 +13,8 @@ class PinCodePage extends StatefulWidget {
 class _MyHomePageState extends State<PinCodePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold( backgroundColor: Colors.white,
+    return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         actions: [
           TextButton(

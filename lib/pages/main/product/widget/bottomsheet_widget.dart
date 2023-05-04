@@ -13,12 +13,17 @@ class BottomSheetWidget extends StatefulWidget {
 
 class _BottomSheetWidgetState extends State<BottomSheetWidget> {
   String? gender;
+
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 281,
-      decoration: const BoxDecoration( color: Colors.white,
-        borderRadius: BorderRadius.only(topLeft: Radius.circular(12), topRight: Radius.circular(12),),
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(12),
+          topRight: Radius.circular(12),
+        ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -61,21 +66,23 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
               });
             },
           ),
-           Padding(
-            padding: const EdgeInsets.only(top: 60, bottom: 16, left: 16, right: 16),
-            child: ElevatedButton (onPressed: (){
-              showModalBottomSheet(
-                context: context,
-                builder: (context) {
-                  return const DeliveryAddressWidget();
-                },
-              );
-                },
-              child: const Text("+ Добавить новый адрес"),),
+          Padding(
+            padding:
+                const EdgeInsets.only(top: 60, bottom: 16, left: 16, right: 16),
+            child: ElevatedButton(
+              onPressed: () {
+                showModalBottomSheet(
+                  context: context,
+                  builder: (context) {
+                    return const DeliveryAddressWidget();
+                  },
+                );
+              },
+              child: const Text("+ Добавить новый адрес"),
+            ),
           ),
         ],
       ),
-
     );
   }
 }

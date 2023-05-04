@@ -7,7 +7,7 @@ class AboutServicePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("About Service"),
+        title: const Text("About Service"),
       ),
     );
   }

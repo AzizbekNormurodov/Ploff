@@ -20,7 +20,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
         body: IndexedStack(
           index: currentIndex,
-          children:   const [
+          children: const [
             HomePage(),
             BasketPage(),
             MyordersPage(),
@@ -53,7 +53,6 @@ class _MainPageState extends State<MainPage> {
               label: 'Мои заказы',
             ),
           ],
-        )
-    );
+        ));
   }
 }

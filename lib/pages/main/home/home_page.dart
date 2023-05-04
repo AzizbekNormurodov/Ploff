@@ -15,7 +15,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final PageController controller = PageController();
 
-  List<String> titleList = ["Популярные блюда", "Плов", "Шашлык", "Чайханский плов"];
+  List<String> titleList = [
+    "Популярные блюда",
+    "Плов",
+    "Шашлык",
+    "Чайханский плов"
+  ];
   int isSelected = 0;
 
   @override
@@ -75,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                                 onTap: () {
                                   setState(() {
                                     isSelected = index;
-                                   });
+                                  });
                                 },
                                 child: Container(
                                   decoration: BoxDecoration(

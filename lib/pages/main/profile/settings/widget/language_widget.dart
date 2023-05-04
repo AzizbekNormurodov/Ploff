@@ -9,6 +9,7 @@ class LanguageWidget extends StatefulWidget {
 
 class _LanguageWidgetState extends State<LanguageWidget> {
   String lang = "ru";
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -31,20 +32,21 @@ class _LanguageWidgetState extends State<LanguageWidget> {
               ),
             ),
           ),
-          Container(
-            child: Column(
-              children: [
-                CheckboxListTile(
-                  //checkbox positioned at right
-                  value: lang == "uz",
-                  onChanged: (bool? value) {
-                    setState(() {
-                      lang = "uz";
-                    });
-                  },
-                  title: Row(children: [
+          Column(
+            children: [
+              CheckboxListTile(
+                //checkbox positioned at right
+                value: lang == "uz",
+                onChanged: (bool? value) {
+                  setState(() {
+                    lang = "uz";
+                  });
+                },
+                title: Row(
+                  children: [
                     Padding(
-                      padding: const EdgeInsets.only( right: 16, top: 12, bottom: 12),
+                      padding: const EdgeInsets.only(
+                          right: 16, top: 12, bottom: 12),
                       child: Image.asset("assets/png/uz.png"),
                     ),
                     const Text(
@@ -54,19 +56,22 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                         fontSize: 15,
                       ),
                     ),
-                  ],),
+                  ],
                 ),
-                CheckboxListTile(
-                  //checkbox positioned at right
-                  value: lang == "ru",
-                  onChanged: (bool? value) {
-                    setState(() {
-                      lang = "ru";
-                    });
-                  },
-                  title: Row(children: [
+              ),
+              CheckboxListTile(
+                //checkbox positioned at right
+                value: lang == "ru",
+                onChanged: (bool? value) {
+                  setState(() {
+                    lang = "ru";
+                  });
+                },
+                title: Row(
+                  children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 16, top: 12, bottom: 12),
+                      padding: const EdgeInsets.only(
+                          right: 16, top: 12, bottom: 12),
                       child: Image.asset("assets/png/ru.png"),
                     ),
                     const Text(
@@ -76,19 +81,22 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                         fontSize: 15,
                       ),
                     ),
-                  ],),
+                  ],
                 ),
-                CheckboxListTile(
-                  //checkbox positioned at right
-                  value: lang == "en",
-                  onChanged: (bool? value) {
-                    setState(() {
-                      lang = "en";
-                    });
-                  },
-                  title: Row(children: [
+              ),
+              CheckboxListTile(
+                //checkbox positioned at right
+                value: lang == "en",
+                onChanged: (bool? value) {
+                  setState(() {
+                    lang = "en";
+                  });
+                },
+                title: Row(
+                  children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 16, top: 12, bottom: 12),
+                      padding: const EdgeInsets.only(
+                          right: 16, top: 12, bottom: 12),
                       child: Image.asset("assets/png/eng.png"),
                     ),
                     const Text(
@@ -98,15 +106,13 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                         fontSize: 15,
                       ),
                     ),
-                  ],),
+                  ],
                 ),
-
-              ],
-            ),
+              ),
+            ],
           ),
         ],
       ),
     );
   }
-
 }

@@ -4,7 +4,7 @@ import 'package:ploff/routes/app_routes.dart';
 import '../../../core/theme/theme_text_styles.dart';
 
 class DetailsPage extends StatefulWidget {
-   DetailsPage({Key? key}) : super(key: key);
+  const DetailsPage({Key? key}) : super(key: key);
 
   @override
   State<DetailsPage> createState() => _DetailsPageState();
@@ -13,7 +13,8 @@ class DetailsPage extends StatefulWidget {
 class _DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold( backgroundColor: Colors.white,
+    return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         toolbarHeight: 76.0,
         elevation: 0.0,
@@ -106,7 +107,6 @@ class _DetailsPageState extends State<DetailsPage> {
           child: const Text("Continue"),
         ),
       ),
-
     );
   }
 }

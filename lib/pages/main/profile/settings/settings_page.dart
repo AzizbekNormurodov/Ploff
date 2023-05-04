@@ -7,15 +7,14 @@ import 'package:ploff/pages/main/profile/settings/widget/language_widget.dart';
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key? key}) : super(key: key);
 
-
   @override
   State<SettingsPage> createState() => _SettingsPageState();
 }
 
 class _SettingsPageState extends State<SettingsPage> {
-
   bool switchValue = true;
   bool switchValue1 = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,21 +27,24 @@ class _SettingsPageState extends State<SettingsPage> {
       ),
       body: Column(
         children: [
-          GestureDetector( onTap: (){
-            showModalBottomSheet(
-                context: context,
-                builder: (context) {
-                  return  const LanguageWidget();
-                });
-          },
+          GestureDetector(
+            onTap: () {
+              showModalBottomSheet(
+                  context: context,
+                  builder: (context) {
+                    return const LanguageWidget();
+                  });
+            },
             child: Padding(
               padding: const EdgeInsets.only(top: 16),
               child: Container(
                 width: double.infinity,
                 height: 64,
-                decoration: const BoxDecoration( color: Colors.white,
+                decoration: const BoxDecoration(
+                    color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(12))),
-                child: Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
                       children: [
@@ -52,13 +54,17 @@ class _SettingsPageState extends State<SettingsPage> {
                         ),
                         const Padding(
                           padding: EdgeInsets.only(top: 16, bottom: 16),
-                          child: Text("Язык",style: ThemeTextStyles.setting,),
+                          child: Text(
+                            "Язык",
+                            style: ThemeTextStyles.setting,
+                          ),
                         ),
                       ],
                     ),
                     const Padding(
                       padding: EdgeInsets.only(right: 16),
-                      child: Icon(Icons.chevron_right_outlined, color: Color(0xff818C99)),
+                      child: Icon(Icons.chevron_right_outlined,
+                          color: Color(0xff818C99)),
                     ),
                   ],
                 ),
@@ -68,9 +74,11 @@ class _SettingsPageState extends State<SettingsPage> {
           Container(
             width: double.infinity,
             height: 64,
-            decoration: const BoxDecoration( color: Colors.white,
+            decoration: const BoxDecoration(
+                color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(12))),
-            child: Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
                   children: [
@@ -79,14 +87,18 @@ class _SettingsPageState extends State<SettingsPage> {
                       child: Image.asset("assets/png/notification.png"),
                     ),
                     const Padding(
-                      padding: EdgeInsets.only( top: 16, bottom: 16),
-                      child: Text("Уведомлений", style: ThemeTextStyles.setting,),
+                      padding: EdgeInsets.only(top: 16, bottom: 16),
+                      child: Text(
+                        "Уведомлений",
+                        style: ThemeTextStyles.setting,
+                      ),
                     ),
                   ],
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 16),
-                  child: Transform.scale( scale: 0.8,
+                  child: Transform.scale(
+                    scale: 0.8,
                     child: CupertinoSwitch(
                       value: switchValue1,
                       activeColor: ThemeColors.primary,
@@ -101,8 +113,6 @@ class _SettingsPageState extends State<SettingsPage> {
               ],
             ),
           ),
-
-
         ],
       ),
     );

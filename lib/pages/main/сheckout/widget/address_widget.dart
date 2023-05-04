@@ -21,8 +21,7 @@ class AddressWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           const Padding(
-            padding:
-            EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 8),
+            padding: EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 8),
             child: Text(
               "Адрес доставки",
               style: ThemeTextStyles.appTitle,
@@ -30,7 +29,10 @@ class AddressWidget extends StatelessWidget {
           ),
           const Padding(
             padding: EdgeInsets.only(left: 16, bottom: 4),
-            child: Text("Текущий адрес", style: ThemeTextStyles.adress,),
+            child: Text(
+              "Текущий адрес",
+              style: ThemeTextStyles.adress,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16, right: 16, bottom: 8),
@@ -41,7 +43,8 @@ class AddressWidget extends StatelessWidget {
                   hintStyle: TextStyle(color: ThemeColors.black1),
                   fillColor: Color(0xffF5F5F5),
                   labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                  border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(width: 0.0),
                     borderRadius: BorderRadius.all(Radius.circular(8)),
                   )),
               // controller: cpfcontroller,
@@ -58,8 +61,10 @@ class AddressWidget extends StatelessWidget {
                         hintText: 'Подъезд',
                         hintStyle: ThemeTextStyles.adress,
                         fillColor: Color(0xffF5F5F5),
-                        labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                        border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                        labelStyle:
+                            TextStyle(fontSize: 10, color: Colors.black),
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(width: 0.0),
                           borderRadius: BorderRadius.all(Radius.circular(8)),
                         )),
                     // controller: cpfcontroller,
@@ -75,8 +80,10 @@ class AddressWidget extends StatelessWidget {
                         hintText: 'Этаж',
                         hintStyle: ThemeTextStyles.adress,
                         fillColor: Color(0xffF5F5F5),
-                        labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                        border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                        labelStyle:
+                            TextStyle(fontSize: 10, color: Colors.black),
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(width: 0.0),
                           borderRadius: BorderRadius.all(Radius.circular(8)),
                         )),
                     // controller: cpfcontroller,
@@ -92,8 +99,10 @@ class AddressWidget extends StatelessWidget {
                         hintText: 'Квартира',
                         hintStyle: ThemeTextStyles.adress,
                         fillColor: Color(0xffF5F5F5),
-                        labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                        border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                        labelStyle:
+                            TextStyle(fontSize: 10, color: Colors.black),
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(width: 0.0),
                           borderRadius: BorderRadius.all(Radius.circular(8)),
                         )),
                     // controller: cpfcontroller,
@@ -108,7 +117,10 @@ class AddressWidget extends StatelessWidget {
           ),
           const Padding(
             padding: EdgeInsets.only(left: 16, bottom: 4),
-            child: Text("Мои адреса", style: ThemeTextStyles.adress,),
+            child: Text(
+              "Мои адреса",
+              style: ThemeTextStyles.adress,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16, right: 16, bottom: 8),
@@ -119,7 +131,8 @@ class AddressWidget extends StatelessWidget {
                   hintStyle: TextStyle(color: ThemeColors.black1),
                   fillColor: Color(0xffF5F5F5),
                   labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                  border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(width: 0.0),
                     borderRadius: BorderRadius.all(Radius.circular(8)),
                   )),
               // controller: cpfcontroller,

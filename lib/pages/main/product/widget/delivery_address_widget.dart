@@ -26,8 +26,7 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           const Padding(
-            padding:
-                EdgeInsets.only(top: 29, left: 16, right: 16, bottom: 8),
+            padding: EdgeInsets.only(top: 29, left: 16, right: 16, bottom: 8),
             child: Text(
               "Адрес доставки",
               style: ThemeTextStyles.status,
@@ -42,12 +41,12 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
                   hintStyle: TextStyle(color: ThemeColors.black1),
                   fillColor: Color(0xffF5F5F5),
                   labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                  border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(width: 0.0),
                     borderRadius: BorderRadius.all(Radius.circular(8)),
                   )),
               // controller: cpfcontroller,
             ),
-
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16, right: 16),
@@ -60,13 +59,14 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
                         hintText: 'Подъезд',
                         hintStyle: ThemeTextStyles.adress,
                         fillColor: Color(0xffF5F5F5),
-                        labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                        border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                        labelStyle:
+                            TextStyle(fontSize: 10, color: Colors.black),
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(width: 0.0),
                           borderRadius: BorderRadius.all(Radius.circular(8)),
                         )),
                     // controller: cpfcontroller,
                   ),
-
                 ),
                 const SizedBox(
                   width: 8,
@@ -78,8 +78,10 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
                         hintText: 'Этаж',
                         hintStyle: ThemeTextStyles.adress,
                         fillColor: Color(0xffF5F5F5),
-                        labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                        border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                        labelStyle:
+                            TextStyle(fontSize: 10, color: Colors.black),
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(width: 0.0),
                           borderRadius: BorderRadius.all(Radius.circular(8)),
                         )),
                     // controller: cpfcontroller,
@@ -95,8 +97,10 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
                         hintText: 'Квартира',
                         hintStyle: ThemeTextStyles.adress,
                         fillColor: Color(0xffF5F5F5),
-                        labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                        border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                        labelStyle:
+                            TextStyle(fontSize: 10, color: Colors.black),
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(width: 0.0),
                           borderRadius: BorderRadius.all(Radius.circular(8)),
                         )),
                     // controller: cpfcontroller,
@@ -115,7 +119,8 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
                   hintStyle: ThemeTextStyles.adress,
                   fillColor: Color(0xffF5F5F5),
                   labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                  border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(width: 0.0),
                     borderRadius: BorderRadius.all(Radius.circular(8)),
                   )),
               // controller: cpfcontroller,
@@ -123,14 +128,15 @@ class _DeliveryAddressWidgetState extends State<DeliveryAddressWidget> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16, right: 16),
-            child:TextFormField(
+            child: TextFormField(
               style: ThemeTextStyles.inputname,
               decoration: const InputDecoration(
                   hintText: 'Название адреса',
                   hintStyle: ThemeTextStyles.adress,
                   fillColor: Color(0xffF5F5F5),
                   labelStyle: TextStyle(fontSize: 10, color: Colors.black),
-                  border: OutlineInputBorder( borderSide: BorderSide(width: 0.0),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(width: 0.0),
                     borderRadius: BorderRadius.all(Radius.circular(8)),
                   )),
               // controller: cpfcontroller,

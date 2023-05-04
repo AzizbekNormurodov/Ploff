@@ -11,7 +11,7 @@ import 'widget/delivery_time_widget.dart';
 import 'widget/payment_type_widget.dart';
 
 class CheckoutPage extends StatefulWidget {
-  CheckoutPage({Key? key}) : super(key: key);
+  const CheckoutPage({Key? key}) : super(key: key);
 
   @override
   State<CheckoutPage> createState() => _CheckoutPageState();
@@ -26,6 +26,7 @@ class _CheckoutPageState extends State<CheckoutPage>
 
   @override
   void initState() {
+    super.initState();
     tabController = TabController(length: 2, vsync: this);
     tabController.addListener(() {});
   }

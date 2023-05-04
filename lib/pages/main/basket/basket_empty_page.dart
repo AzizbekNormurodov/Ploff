@@ -20,12 +20,13 @@ class BasketEmptyPage extends StatelessWidget {
           ButtonWidget(),
         ],
       ),
-      body: Center(child: Image.asset("assets/png/basket.png"),),
+      body: Center(
+        child: Image.asset("assets/png/basket.png"),
+      ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(16),
         child: ElevatedButton(
-          onPressed: () {
-          },
+          onPressed: () {},
           child: const Text("Оформить заказ"),
         ),
       ),

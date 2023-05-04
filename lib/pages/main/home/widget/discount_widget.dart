@@ -13,7 +13,7 @@ class DiscountWidget extends StatelessWidget {
         padding: const EdgeInsets.only(top: 12, bottom: 12),
         child: Container(
           width: double.infinity,
-          height: 527,
+          height: 529,
           decoration: const BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.all(
@@ -23,7 +23,8 @@ class DiscountWidget extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.only(left: 16),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 const Padding(
                   padding: EdgeInsets.only(top: 16),
@@ -32,10 +33,14 @@ class DiscountWidget extends StatelessWidget {
                     style: ThemeTextStyles.text2,
                   ),
                 ),
-                ContainerWidget(text: "35 000 сум", image: "assets/png/ploff1.png"),
-                ContainerWidget(text: "47 000 сум", image: "assets/png/ploff2.png"),
-                ContainerWidget(text: "41 000 сум", image: "assets/png/ploff3.png"),
-                ContainerWidget(text: "52 000 сум", image: "assets/png/ploff4.png"),
+                ContainerWidget(
+                    text: "35 000 сум", image: "assets/png/ploff1.png"),
+                ContainerWidget(
+                    text: "47 000 сум", image: "assets/png/ploff2.png"),
+                ContainerWidget(
+                    text: "41 000 сум", image: "assets/png/ploff3.png"),
+                ContainerWidget(
+                    text: "52 000 сум", image: "assets/png/ploff4.png"),
               ],
             ),
           ),
@@ -44,20 +49,24 @@ class DiscountWidget extends StatelessWidget {
     );
   }
 }
+
 class ContainerWidget extends StatelessWidget {
-   ContainerWidget({Key? key, required this.text, required this.image}) : super(key: key);
+  ContainerWidget({Key? key, required this.text, required this.image})
+      : super(key: key);
   String image;
   String text;
 
   @override
   Widget build(BuildContext context) {
-    return InkWell( onTap: (){
-      Navigator.pushNamed(context, AppRoutes.product);
-    },
-      child: Container(
+    return InkWell(
+      onTap: () {
+        Navigator.pushNamed(context, AppRoutes.product);
+      },
+      child: SizedBox(
         width: double.infinity,
         height: 120,
-        child: Column( crossAxisAlignment: CrossAxisAlignment.start,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
@@ -69,23 +78,35 @@ class ContainerWidget extends StatelessWidget {
                       style: ThemeTextStyles.order2,
                     ),
                     const Text(
-                      "Своим именем чайханский плов обязан \nстарой ташкентской традиции «ош»...", style: TextStyle(
-                      fontSize: 13, fontWeight: FontWeight.w400, color: ThemeColors.black3,
-                    ),),
-                    Text(text, style: ThemeTextStyles.order2,),
+                      "Своим именем чайханский плов обязан \nстарой ташкентской традиции «ош»...",
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w400,
+                        color: ThemeColors.black3,
+                      ),
+                    ),
+                    Text(
+                      text,
+                      style: ThemeTextStyles.order2,
+                    ),
                   ],
                 ),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Image.asset(image, width: 86, height: 86,),
+                  child: Image.asset(
+                    image,
+                    width: 56,
+                    height: 86,
+                  ),
                 ),
               ],
             ),
-            Image.asset("assets/png/Rectangle.png",),
+            Image.asset(
+              "assets/png/Rectangle.png",
+            ),
           ],
         ),
       ),
     );
   }
 }
-

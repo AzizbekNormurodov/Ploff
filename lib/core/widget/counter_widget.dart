@@ -23,32 +23,30 @@ class _CounterWidgetState extends State<CounterWidget> {
             number--;
             setState(() {});
           },
+          style: const ButtonStyle(
+              minimumSize: MaterialStatePropertyAll(Size(44, 44)),
+              backgroundColor: MaterialStatePropertyAll(Color(0xffF6F8FB))),
           child: const Text(
             "-",
             style: TextStyle(color: Colors.black),
           ),
-          style: const ButtonStyle(
-              minimumSize: MaterialStatePropertyAll(Size(44, 44)),
-              backgroundColor:
-              MaterialStatePropertyAll(Color(0xffF6F8FB))),
         ),
         Padding(
           padding: const EdgeInsets.only(left: 5, right: 5),
-          child: Text("${number}"),
+          child: Text("$number"),
         ),
         ElevatedButton(
           onPressed: () {
             number++;
             setState(() {});
           },
+          style: const ButtonStyle(
+              minimumSize: MaterialStatePropertyAll(Size(44, 44)),
+              backgroundColor: MaterialStatePropertyAll(Color(0xffF6F8FB))),
           child: const Text(
             "+",
             style: TextStyle(color: Colors.black),
           ),
-          style: const ButtonStyle(
-              minimumSize: MaterialStatePropertyAll(Size(44, 44)),
-              backgroundColor:
-              MaterialStatePropertyAll(Color(0xffF6F8FB))),
         ),
       ],
     );

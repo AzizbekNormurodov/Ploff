@@ -9,8 +9,8 @@ class ArgObject{
 class FilialPage extends StatelessWidget {
    FilialPage({Key? key}) : super(key: key);
   var arg=ArgObject(title: 'Юнусабад');
-  var arg1=ArgObject(title: 'Хадра');
-  var arg2=ArgObject(title: 'Яшнабод');
+  var arg1=ArgObject( title: 'Хадра');
+  var arg2=ArgObject( title: 'Юнусабад');
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +35,7 @@ class FilialPage extends StatelessWidget {
               FilialItem(icon: "assets/png/yunusobod2.png", text: arg2.title, text2: "Абдуллы Кадыри, 42B", onTap: (){
                 Navigator.pushNamed(context, AppRoutes.yunusobod_filial, arguments: arg2);
               }),
+
             ],
           ),
         ),

@@ -12,9 +12,9 @@ class RecommendationsWidget extends StatelessWidget {
         padding: const EdgeInsets.only(top: 16),
         child: Container(
           width: double.infinity,
-          height: 287,
+          height: 289,
           decoration: const BoxDecoration(
-            color: Colors.white,
+            color: Colors.white70,
             borderRadius: BorderRadius.all(
               Radius.circular(12),
             ),
@@ -22,7 +22,8 @@ class RecommendationsWidget extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.only(left: 16),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 const Padding(
                   padding: EdgeInsets.only(top: 16),
@@ -31,8 +32,10 @@ class RecommendationsWidget extends StatelessWidget {
                     style: ThemeTextStyles.text2,
                   ),
                 ),
-                ContainerWidget(text: "35 000 сум", image: "assets/png/ploff7.png"),
-                ContainerWidget(text: "38 000 сум", image: "assets/png/ploff8.png"),
+                ContainerWidget(
+                    text: "35 000 сум", image: "assets/png/ploff7.png"),
+                ContainerWidget(
+                    text: "38 000 сум", image: "assets/png/ploff8.png"),
               ],
             ),
           ),
@@ -41,5 +44,3 @@ class RecommendationsWidget extends StatelessWidget {
     );
   }
 }
-
-

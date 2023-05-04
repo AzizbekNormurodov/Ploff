@@ -22,7 +22,7 @@ class _DeliveryTimeWidgetState extends State<DeliveryTimeWidget> {
         width: double.infinity,
         height: 158,
         decoration: const BoxDecoration(
-          color: Colors.white,
+          color: Colors.white70,
           borderRadius: BorderRadius.all(
             Radius.circular(12),
           ),
@@ -34,7 +34,7 @@ class _DeliveryTimeWidgetState extends State<DeliveryTimeWidget> {
             const Padding(
               padding: EdgeInsets.only(top: 16, left: 16),
               child: Text(
-                "Время доставка",
+                "Время доставка ",
                 style: ThemeTextStyles.appTitle,
               ),
             ),

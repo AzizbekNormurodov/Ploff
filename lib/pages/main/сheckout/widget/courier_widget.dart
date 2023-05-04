@@ -11,15 +11,16 @@ class CourierWidget extends StatefulWidget {
 
 class _CourierWidgetState extends State<CourierWidget> {
   String? gender1;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only( bottom: 16, top: 16),
+      padding: const EdgeInsets.only(bottom: 16, top: 16),
       child: Container(
         width: double.infinity,
         height: 158,
         decoration: const BoxDecoration(
-          color: Colors.white,
+          color: Colors.white70,
           borderRadius: BorderRadius.all(
             Radius.circular(12),
           ),
@@ -28,9 +29,12 @@ class _CourierWidgetState extends State<CourierWidget> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Padding(
-              padding:  const EdgeInsets.only(top: 16, left: 16),
-              child: Text("Хотели бы что бы вам позвонил курьер?", style: ThemeTextStyles.appTitle,),
+            const Padding(
+              padding: EdgeInsets.only(top: 16, left: 16),
+              child: Text(
+                "Хотели бы что бы вам позвонил курьер?",
+                style: ThemeTextStyles.appTitle,
+              ),
             ),
             RadioListTile(
               contentPadding: const EdgeInsets.symmetric(horizontal: 8),
