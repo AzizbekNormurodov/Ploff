@@ -40,11 +40,11 @@ class _YunusobodFilialPageState extends State<YunusobodFilialPage> {
                   fit: BoxFit.fill,
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.only(left: 16, bottom: 24),
+               Padding(
+                padding: const EdgeInsets.only(left: 16, bottom: 24),
                 child: Text(
-                  "Юнусабад",
-                  style: TextStyle(
+                  widget.title,
+                  style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
                   ),

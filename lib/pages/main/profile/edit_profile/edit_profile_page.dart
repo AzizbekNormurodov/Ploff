@@ -2,11 +2,46 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ploff/core/theme/theme_colors.dart';
 import 'package:ploff/core/theme/theme_text_styles.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 import 'widget/data_widget.dart';
 
-class EditProfilePage extends StatelessWidget {
-  const EditProfilePage({Key? key}) : super(key: key);
+
+class EditProfilePage extends StatefulWidget {
+   EditProfilePage({Key? key}) : super(key: key);
+
+
+  @override
+  State<EditProfilePage> createState() => _EditProfilePageState();
+}
+
+class _EditProfilePageState extends State<EditProfilePage> {
+  TextEditingController namecontroller = TextEditingController();
+  TextEditingController phonecontroller = TextEditingController();
+  TextEditingController birthdaycontroller = TextEditingController();
+   String Key_name = "key_name";
+   String Key_phone = "key_phone";
+   String Key_birthday = "key_birthday";
+
+
+   void _loadCounter() async {
+     final prefs = await SharedPreferences.getInstance();
+     setState(() {
+       namecontroller.text = prefs.getString(Key_name)??"";
+       phonecontroller.text = prefs.getString(Key_phone)??"";
+       birthdaycontroller.text = prefs.getString(Key_birthday)??"";
+     });
+   }
+   void _textSave () async {
+     final prefs = await SharedPreferences.getInstance();
+     prefs.setString(Key_name, namecontroller.text);
+     prefs.setString(Key_phone, phonecontroller.text);
+     prefs.setString(Key_birthday, birthdaycontroller.text);
+   }
+  @override
+  void initState() {
+    super.initState();
+    _loadCounter();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +71,7 @@ class EditProfilePage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 16, right: 16),
-                child: TextFormField(
+                child: TextFormField( controller: namecontroller,
                   style: ThemeTextStyles.inputname,
                   decoration: const InputDecoration(
                     hintText: 'Усмонов Акбар',
@@ -58,7 +93,7 @@ class EditProfilePage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 16, right: 16),
-                child: TextFormField(
+                child: TextFormField( controller: phonecontroller,
                   style: ThemeTextStyles.inputname,
                   keyboardType: TextInputType.number,
                   decoration: const InputDecoration(
@@ -80,7 +115,7 @@ class EditProfilePage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 16, right: 16),
-                child: TextFormField(
+                child: TextFormField( controller: birthdaycontroller,
                   style: ThemeTextStyles.inputname,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(suffixIcon: InkWell( onTap: (){
@@ -108,7 +143,7 @@ class EditProfilePage extends StatelessWidget {
       ),
       bottomSheet: Padding(
         padding: const EdgeInsets.only(left: 16, right: 16, bottom: 16),
-        child: ElevatedButton(onPressed: (){},child: const Text("Сохранить"),),
+        child: ElevatedButton(onPressed: _textSave,child: const Text("Сохранить"),),
       ),
     );
   }
