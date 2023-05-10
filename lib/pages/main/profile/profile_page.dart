@@ -36,15 +36,15 @@ class ProfilePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
-                      children: [
-                        const Padding(
+                      children: const [
+                        Padding(
                           padding: EdgeInsets.only(top: 16, bottom: 8),
                           child: Text(
                             "Усмонов Акбар",
                             style: ThemeTextStyles.status,
                           ),
                         ),
-                        const Text(
+                        Text(
                           "+998 12 433 87 32",
                           style: TextStyle(
                               fontSize: 15,

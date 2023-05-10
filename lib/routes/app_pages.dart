@@ -40,7 +40,7 @@ class AppPages {
     AppRoutes.active_order: (context) => const ActiveOrderPage(),
     AppRoutes.history_order: (context) => const HistoryOrderPage(),
     AppRoutes.about_service: (context) => const AboutServicePage(),
-    AppRoutes.edit_profile: (context) =>  EditProfilePage(),
+    AppRoutes.edit_profile: (context) => const EditProfilePage(),
     AppRoutes.filial: (context) => FilialPage(),
     AppRoutes.my_adress: (context) => const MyAdressPage(),
     AppRoutes.settings: (context) => const SettingsPage(),
